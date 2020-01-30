@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29318.209
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "DCSSReplayInstallerMM", "DCSSReplayInstallerMM\DCSSReplayInstallerMM.wixproj", "{17928BDD-4C33-4802-A749-12B0DFC8FAE5}"
+EndProject
+Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "DCSSReplayInstaller", "DCSSReplayInstaller\DCSSReplayInstaller.wixproj", "{A5D0E99B-1FD8-48CA-8AB5-B79DD7944803}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{17928BDD-4C33-4802-A749-12B0DFC8FAE5}.Debug|x86.ActiveCfg = Debug|x86
+		{17928BDD-4C33-4802-A749-12B0DFC8FAE5}.Debug|x86.Build.0 = Debug|x86
+		{17928BDD-4C33-4802-A749-12B0DFC8FAE5}.Release|x86.ActiveCfg = Release|x86
+		{17928BDD-4C33-4802-A749-12B0DFC8FAE5}.Release|x86.Build.0 = Release|x86
+		{A5D0E99B-1FD8-48CA-8AB5-B79DD7944803}.Debug|x86.ActiveCfg = Debug|x86
+		{A5D0E99B-1FD8-48CA-8AB5-B79DD7944803}.Debug|x86.Build.0 = Debug|x86
+		{A5D0E99B-1FD8-48CA-8AB5-B79DD7944803}.Release|x86.ActiveCfg = Release|x86
+		{A5D0E99B-1FD8-48CA-8AB5-B79DD7944803}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {72EDD10C-41F9-433B-B59A-DBF99175E49B}
+	EndGlobalSection
+EndGlobal
