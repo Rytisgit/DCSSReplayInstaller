@@ -15,12 +15,12 @@
 * IsWiX [4.11](https://github.com/iswix-llc/iswix/releases) or higher.
    * Will automatically target all of your Visual Studio installations without the need forseperate extension downloads.
 
-update DCSSReplayInstallerMM.wxs line 5
+#### update DCSSReplayInstallerMM.wxs line 5
 
 ` <?define SourceDir="C:\source\ttyrecPlayer\ttyrecTiles"?>
 `
 
-to your DCSSReplay source folder
+#### to your DCSSReplay source folder
 
 
-You also need to have built the main project with release configuration
+#### You also need to have built the main project with release configuration
