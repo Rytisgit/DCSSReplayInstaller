@@ -18835,7 +18835,7 @@
         </Directory>
         <Directory Id="owdB1F5DA8ABAC3BFA1AEA92C20263306A9" Name="its a folder">
           <Directory Id="owdED8756F99E51B339C33ECF196F1A66D5" Name="another one">
-            <Directory Id="owdDA841355A57A1383CB6D5A3569D926AE" Name="the real stuff">
+            <Directory Id="EXEFOLDER" Name="the real stuff">
               <Component Id="owc9F72EA9DB0877B8D379E4136482B788B" Guid="6f22cbc8-f24f-f13d-d1ae-e1013cf5c31c">
                 <File Id="owf9F72EA9DB0877B8D379E4136482B788B" Source="$(var.SourceDir)\bin\x86\Release\Character.dll" KeyPath="yes" />
               </Component>
@@ -18871,7 +18871,7 @@
               </Component>
               <Component Id="owc56A8FA7AADAC61048ADBEE6605638765" Guid="0df49782-28c8-93b5-1fe7-94dc8730703e">
                 <File Id="owf56A8FA7AADAC61048ADBEE6605638765" Source="$(var.SourceDir)\bin\x86\Release\TtyRecMonkey.exe" KeyPath="yes">
-                  <Shortcut Id="scB139AC5FC680862F7102BCCECF00D955" Name="DCSSReplay" Directory="DesktopFolder" Description="Play ttyrec files with visuals" WorkingDirectory="owdDA841355A57A1383CB6D5A3569D926AE"/>
+                  <Shortcut Id="scB139AC5FC680862F7102BCCECF00D955" Name="DCSSReplay" Directory="DesktopFolder" Description="Play ttyrec files with visuals" WorkingDirectory="EXEFOLDER"/>
                 </File>
               </Component>
               <Component Id="owcB031A83EDADDAF9DFDC682132689ED54" Guid="44ba5d4b-714e-156f-af48-e8c9bfe19f93">
