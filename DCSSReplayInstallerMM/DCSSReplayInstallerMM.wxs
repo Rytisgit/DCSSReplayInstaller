@@ -1621,6 +1621,9 @@
                 <Component Id="owc9A7DD5965923EEEB78A782B0F9693A76" Guid="b0380b28-2c9d-90c6-5cac-04333c68c667">
                   <File Id="owf9A7DD5965923EEEB78A782B0F9693A76" Source="$(var.SourceDir)\Extra\rltiles\dngn\floor\rect_gray3.png" KeyPath="yes" />
                 </Component>
+                <Component Id="owc8D2D25884DCED9ED6B8F20939A89829E" Guid="540bfa8e-3b93-67c8-f1e6-0b4e64008121">
+                  <File Id="owf8D2D25884DCED9ED6B8F20939A89829E" Source="$(var.SourceDir)\Extra\rltiles\dngn\floor\rough_magenta3.png" KeyPath="yes" />
+                </Component>
                 <Component Id="owc5E9AEA2825243839AEAA29CE8A770E4D" Guid="ba8ada5b-c66d-06b1-3653-02a67e5b9b4d">
                   <File Id="owf5E9AEA2825243839AEAA29CE8A770E4D" Source="$(var.SourceDir)\Extra\rltiles\dngn\floor\rough_red0.png" KeyPath="yes" />
                 </Component>
@@ -4348,6 +4351,9 @@
                 </Component>
                 <Component Id="owcC3189BF5B2259B4821F74D25FC560D75" Guid="85718ff8-3719-70d7-aaf8-6788391c8cdb">
                   <File Id="owfC3189BF5B2259B4821F74D25FC560D75" Source="$(var.SourceDir)\Extra\rltiles\dngn\wall\zot_blue3.png" KeyPath="yes" />
+                </Component>
+                <Component Id="owcD2E6BB6FB2E3B2255C4562DAAD25967C" Guid="95883e2e-cd3e-b52a-d8a4-ba83c02e6d04">
+                  <File Id="owfD2E6BB6FB2E3B2255C4562DAAD25967C" Source="$(var.SourceDir)\Extra\rltiles\dngn\wall\zot_magenta1.png" KeyPath="yes" />
                 </Component>
                 <Directory Id="owd61CEF3373EE010E9C2587DB29C9AB06C" Name="abyss">
                   <Component Id="owcA438DDA82BE40EE13366EF9F3D9E4E6D" Guid="d90e27a3-4225-c8ed-e48c-c282f277ce47">
@@ -10768,11 +10774,17 @@
                 <Component Id="owcEF9E49D81C947894A90FA599EC2BFC7B" Guid="97de77af-657b-2e8a-f73f-e4ebb4c0786a">
                   <File Id="owfEF9E49D81C947894A90FA599EC2BFC7B" Source="$(var.SourceDir)\Extra\rltiles\mon\amorphous\death_ooze.png" KeyPath="yes" />
                 </Component>
+                <Component Id="owc5ACAAA79F8970B5DEAC97496489893FF" Guid="f4524068-aeb3-3e90-923d-50b5822661b2">
+                  <File Id="owf5ACAAA79F8970B5DEAC97496489893FF" Source="$(var.SourceDir)\Extra\rltiles\mon\amorphous\enormous_slime_creature.png" KeyPath="yes" />
+                </Component>
                 <Component Id="owc8B79772293DB28089D10296AE579621F" Guid="5f1c7041-aef1-865b-c2f9-9d935bab60e2">
                   <File Id="owf8B79772293DB28089D10296AE579621F" Source="$(var.SourceDir)\Extra\rltiles\mon\amorphous\glowing_shapeshifter.png" KeyPath="yes" />
                 </Component>
                 <Component Id="owc3273B8F8EF8EB03E5655D80ACC042872" Guid="f444b30c-5970-a58e-0091-e7dac128e396">
                   <File Id="owf3273B8F8EF8EB03E5655D80ACC042872" Source="$(var.SourceDir)\Extra\rltiles\mon\amorphous\jelly.png" KeyPath="yes" />
+                </Component>
+                <Component Id="owc4A2BBFD3D34C9953E4003F8092720E12" Guid="238c9095-ec18-d42b-6fa4-0b68a98b70f9">
+                  <File Id="owf4A2BBFD3D34C9953E4003F8092720E12" Source="$(var.SourceDir)\Extra\rltiles\mon\amorphous\large_slime_creature.png" KeyPath="yes" />
                 </Component>
                 <Component Id="owc37C473A100E232C68B7967A84FACB75C" Guid="6ce09339-b83a-b030-667e-bc29ef4bf4c8">
                   <File Id="owf37C473A100E232C68B7967A84FACB75C" Source="$(var.SourceDir)\Extra\rltiles\mon\amorphous\ooze.png" KeyPath="yes" />
@@ -10783,17 +10795,11 @@
                 <Component Id="owc2EABCC10263882E74DF8D3653D6F77B2" Guid="1c426099-e876-a3c1-d5a9-f04694b483cf">
                   <File Id="owf2EABCC10263882E74DF8D3653D6F77B2" Source="$(var.SourceDir)\Extra\rltiles\mon\amorphous\slime_creature.png" KeyPath="yes" />
                 </Component>
-                <Component Id="owc649130DE036F1E5E43E4230D9B08DCA1" Guid="700d68f8-4e15-7230-dfb8-dc572c6ff0e2">
-                  <File Id="owf649130DE036F1E5E43E4230D9B08DCA1" Source="$(var.SourceDir)\Extra\rltiles\mon\amorphous\slime_creature2.png" KeyPath="yes" />
+                <Component Id="owc7544773CEC4124B51FBE9BC1B40A13CC" Guid="4815ebcf-8acf-01b3-6b0c-4bb2f924cdec">
+                  <File Id="owf7544773CEC4124B51FBE9BC1B40A13CC" Source="$(var.SourceDir)\Extra\rltiles\mon\amorphous\titanic_slime_creature.png" KeyPath="yes" />
                 </Component>
-                <Component Id="owcB652C107369062C28E1D228066AD13D8" Guid="e53ec988-aad2-c30f-ff02-1cb0c6dbb50e">
-                  <File Id="owfB652C107369062C28E1D228066AD13D8" Source="$(var.SourceDir)\Extra\rltiles\mon\amorphous\slime_creature3.png" KeyPath="yes" />
-                </Component>
-                <Component Id="owcBE5C9FFE5A121A3D8DA3C130A4E60C32" Guid="061652b5-29e6-e1a8-e331-1ea1abf6e311">
-                  <File Id="owfBE5C9FFE5A121A3D8DA3C130A4E60C32" Source="$(var.SourceDir)\Extra\rltiles\mon\amorphous\slime_creature4.png" KeyPath="yes" />
-                </Component>
-                <Component Id="owc1952EE7D4C28C4B8554F21F89351BC1F" Guid="d33d8736-9aa8-c97e-b65d-210db2b7bd3d">
-                  <File Id="owf1952EE7D4C28C4B8554F21F89351BC1F" Source="$(var.SourceDir)\Extra\rltiles\mon\amorphous\slime_creature5.png" KeyPath="yes" />
+                <Component Id="owcDD1E0F6990F9659C84D858902941E4BA" Guid="9a2c52d4-e5ba-288a-c361-3b66ac42c598">
+                  <File Id="owfDD1E0F6990F9659C84D858902941E4BA" Source="$(var.SourceDir)\Extra\rltiles\mon\amorphous\very_slime_creature.png" KeyPath="yes" />
                 </Component>
               </Directory>
               <Directory Id="owd76574D29F302A82B61264BE3C1A1226A" Name="animals">
@@ -11348,35 +11354,11 @@
                 </Component>
               </Directory>
               <Directory Id="owdF96317D17B5B93FDCC0E64F278600EB8" Name="draco">
-                <Component Id="owc15D4AFD4038EBB70132EA0D0ECC3C90C" Guid="cadef318-a483-5324-7ffd-ea280a7984bd">
-                  <File Id="owf15D4AFD4038EBB70132EA0D0ECC3C90C" Source="$(var.SourceDir)\Extra\rltiles\mon\draco\draco-base-black.png" KeyPath="yes" />
+                <Component Id="owcC967C3D103484C18052CFBD04A359C5A" Guid="3cded3a1-e7d0-74a8-c374-a16ef3b65848">
+                  <File Id="owfC967C3D103484C18052CFBD04A359C5A" Source="$(var.SourceDir)\Extra\rltiles\mon\draco\black_draconian.png" KeyPath="yes" />
                 </Component>
-                <Component Id="owcD1A8D410564115C8994A89724C89E155" Guid="a8ca0946-7e08-7858-32e0-bee0832ac3e6">
-                  <File Id="owfD1A8D410564115C8994A89724C89E155" Source="$(var.SourceDir)\Extra\rltiles\mon\draco\draco-base-brown.png" KeyPath="yes" />
-                </Component>
-                <Component Id="owcF5CC5E624ACBAAE8AB75D3A8BE4B8783" Guid="46631299-f360-9696-3999-35b0fe4e05e2">
-                  <File Id="owfF5CC5E624ACBAAE8AB75D3A8BE4B8783" Source="$(var.SourceDir)\Extra\rltiles\mon\draco\draco-base-green.png" KeyPath="yes" />
-                </Component>
-                <Component Id="owcEAA6038D31F45967130EBCB0421DA9DE" Guid="4ed393a3-e79a-8233-5832-6da57a7b6512">
-                  <File Id="owfEAA6038D31F45967130EBCB0421DA9DE" Source="$(var.SourceDir)\Extra\rltiles\mon\draco\draco-base-grey.png" KeyPath="yes" />
-                </Component>
-                <Component Id="owc58E73222DC5BCA168F352EB38BA0013D" Guid="9a3eefeb-abd6-d39f-d5e2-a1d957469b3c">
-                  <File Id="owf58E73222DC5BCA168F352EB38BA0013D" Source="$(var.SourceDir)\Extra\rltiles\mon\draco\draco-base-mottle.png" KeyPath="yes" />
-                </Component>
-                <Component Id="owc2C0B68DD4790BFE9576A94E4160EAC81" Guid="98f7669a-240d-03ae-b4ce-f5a0bcf19519">
-                  <File Id="owf2C0B68DD4790BFE9576A94E4160EAC81" Source="$(var.SourceDir)\Extra\rltiles\mon\draco\draco-base-pale.png" KeyPath="yes" />
-                </Component>
-                <Component Id="owc894D8397AF99BB7406CD11DE965BF7E8" Guid="02d1c725-9cc2-3f9c-3c13-2bae45202f33">
-                  <File Id="owf894D8397AF99BB7406CD11DE965BF7E8" Source="$(var.SourceDir)\Extra\rltiles\mon\draco\draco-base-purple.png" KeyPath="yes" />
-                </Component>
-                <Component Id="owc0D37EC104C791B51259E26DCB7ACF7A5" Guid="4c8539b0-d991-492e-812c-0edc7cf4d802">
-                  <File Id="owf0D37EC104C791B51259E26DCB7ACF7A5" Source="$(var.SourceDir)\Extra\rltiles\mon\draco\draco-base-red.png" KeyPath="yes" />
-                </Component>
-                <Component Id="owcA7CC3C04B7002F68B1D776158FF265F6" Guid="1ac32849-26c7-1c32-05a8-58d4780606a1">
-                  <File Id="owfA7CC3C04B7002F68B1D776158FF265F6" Source="$(var.SourceDir)\Extra\rltiles\mon\draco\draco-base-white.png" KeyPath="yes" />
-                </Component>
-                <Component Id="owcCEB9C5DE9F43D6AA0BF8F75C28A13DDA" Guid="b4f056e2-7b30-3ab3-3172-7c22eae5b98d">
-                  <File Id="owfCEB9C5DE9F43D6AA0BF8F75C28A13DDA" Source="$(var.SourceDir)\Extra\rltiles\mon\draco\draco-base-yellow.png" KeyPath="yes" />
+                <Component Id="owc778108246C60305D75EC649498403667" Guid="411b3d7e-d052-92c5-4e8e-e5e77a5b3180">
+                  <File Id="owf778108246C60305D75EC649498403667" Source="$(var.SourceDir)\Extra\rltiles\mon\draco\brown_draconian.png" KeyPath="yes" />
                 </Component>
                 <Component Id="owc85F05A6A53C5F937B670675FE2501F9F" Guid="bbe379ef-87c3-24d5-0052-bf46f5ff6901">
                   <File Id="owf85F05A6A53C5F937B670675FE2501F9F" Source="$(var.SourceDir)\Extra\rltiles\mon\draco\draco-job-annihilator.png" KeyPath="yes" />
@@ -11395,6 +11377,48 @@
                 </Component>
                 <Component Id="owcE014A20283719FF84A61932CB9D0EBE1" Guid="448a3f37-10dd-a368-88d9-86b5bd7ff932">
                   <File Id="owfE014A20283719FF84A61932CB9D0EBE1" Source="$(var.SourceDir)\Extra\rltiles\mon\draco\draco-job-stormcaller.png" KeyPath="yes" />
+                </Component>
+                <Component Id="owc53CFD248E2E1B1E2679BE9BC75E0AD57" Guid="1edd8a10-15dd-f396-fe8a-d808bbc5a52a">
+                  <File Id="owf53CFD248E2E1B1E2679BE9BC75E0AD57" Source="$(var.SourceDir)\Extra\rltiles\mon\draco\draconian_annihilator.png" KeyPath="yes" />
+                </Component>
+                <Component Id="owc3B9202985F272711C134C1FA837951F6" Guid="9ea2d4c3-b675-ab1f-e3c5-a6f67d93de7b">
+                  <File Id="owf3B9202985F272711C134C1FA837951F6" Source="$(var.SourceDir)\Extra\rltiles\mon\draco\draconian_knight.png" KeyPath="yes" />
+                </Component>
+                <Component Id="owcF6BA9A498BF31C1A58B4B20FCF694CB8" Guid="fadc0109-1c79-d230-e8cc-e989df50cd1c">
+                  <File Id="owfF6BA9A498BF31C1A58B4B20FCF694CB8" Source="$(var.SourceDir)\Extra\rltiles\mon\draco\draconian_monk.png" KeyPath="yes" />
+                </Component>
+                <Component Id="owc480A29E6709CAD424E74D974A5A2C229" Guid="aeb99d25-7a5a-2176-8ed6-65d80a2d0a91">
+                  <File Id="owf480A29E6709CAD424E74D974A5A2C229" Source="$(var.SourceDir)\Extra\rltiles\mon\draco\draconian_scorcher.png" KeyPath="yes" />
+                </Component>
+                <Component Id="owc54E1138A6347891063B1503AC9DF4CBA" Guid="e6738abd-67b5-3e94-0043-d3bd941185f7">
+                  <File Id="owf54E1138A6347891063B1503AC9DF4CBA" Source="$(var.SourceDir)\Extra\rltiles\mon\draco\draconian_shifter.png" KeyPath="yes" />
+                </Component>
+                <Component Id="owc145B88CAA1A9705FB4D65DB2468D5371" Guid="789f6c73-dc17-b785-b466-b8f8d3de11ef">
+                  <File Id="owf145B88CAA1A9705FB4D65DB2468D5371" Source="$(var.SourceDir)\Extra\rltiles\mon\draco\draconian_stormcaller.png" KeyPath="yes" />
+                </Component>
+                <Component Id="owc3A387D6ABE154E503742ED54C30CE31A" Guid="628fb9e8-b78d-e9e4-8c9f-98244e06e9c2">
+                  <File Id="owf3A387D6ABE154E503742ED54C30CE31A" Source="$(var.SourceDir)\Extra\rltiles\mon\draco\green_draconian.png" KeyPath="yes" />
+                </Component>
+                <Component Id="owc5737615976BF59A75958FF8577341CC8" Guid="4a6ba0db-5318-4934-7773-9c572ed5bdbc">
+                  <File Id="owf5737615976BF59A75958FF8577341CC8" Source="$(var.SourceDir)\Extra\rltiles\mon\draco\grey_draconian.png" KeyPath="yes" />
+                </Component>
+                <Component Id="owcC216CC220D9E4BC9C85C071325623E3F" Guid="709e6173-6b2b-41ac-b385-2e5b3fca1f69">
+                  <File Id="owfC216CC220D9E4BC9C85C071325623E3F" Source="$(var.SourceDir)\Extra\rltiles\mon\draco\mottle_draconian.png" KeyPath="yes" />
+                </Component>
+                <Component Id="owcE3CF8D04BFC7700FC8F8D1BBEE14B94F" Guid="010d2278-8770-b615-4594-cb4d7c70a9a0">
+                  <File Id="owfE3CF8D04BFC7700FC8F8D1BBEE14B94F" Source="$(var.SourceDir)\Extra\rltiles\mon\draco\pale_draconian.png" KeyPath="yes" />
+                </Component>
+                <Component Id="owc89F579A5407A78E07A8D46E53EA2861D" Guid="0bb3a4da-7717-5669-5c70-e22911a3a0c2">
+                  <File Id="owf89F579A5407A78E07A8D46E53EA2861D" Source="$(var.SourceDir)\Extra\rltiles\mon\draco\purple_draconian.png" KeyPath="yes" />
+                </Component>
+                <Component Id="owcBFB613D9AA6E8AAD76487DDB6CBB8EDA" Guid="282a5658-862e-47e6-3e57-bc936b5651a4">
+                  <File Id="owfBFB613D9AA6E8AAD76487DDB6CBB8EDA" Source="$(var.SourceDir)\Extra\rltiles\mon\draco\red_draconian.png" KeyPath="yes" />
+                </Component>
+                <Component Id="owc0C0848DE57473F869A2FCE4A264C90C8" Guid="b0be0692-aa7a-6a31-3d41-fef407ee45a9">
+                  <File Id="owf0C0848DE57473F869A2FCE4A264C90C8" Source="$(var.SourceDir)\Extra\rltiles\mon\draco\white_draconian.png" KeyPath="yes" />
+                </Component>
+                <Component Id="owcCB96F984B5C3DCCE38E90879DF60A551" Guid="ab1cef94-93ff-3a5b-eeca-06c1032552d3">
+                  <File Id="owfCB96F984B5C3DCCE38E90879DF60A551" Source="$(var.SourceDir)\Extra\rltiles\mon\draco\yellow_draconian.png" KeyPath="yes" />
                 </Component>
               </Directory>
               <Directory Id="owd38442CDA73A01F66A68076D3FCF6ACF1" Name="dragons">
@@ -18871,8 +18895,11 @@
               </Component>
               <Component Id="owc56A8FA7AADAC61048ADBEE6605638765" Guid="0df49782-28c8-93b5-1fe7-94dc8730703e">
                 <File Id="owf56A8FA7AADAC61048ADBEE6605638765" Source="$(var.SourceDir)\bin\x86\Release\TtyRecMonkey.exe" KeyPath="yes">
-                  <Shortcut Id="scB139AC5FC680862F7102BCCECF00D955" Name="DCSSReplay" Directory="DesktopFolder" Description="Play ttyrec files with visuals" WorkingDirectory="EXEFOLDER"/>
+                  <Shortcut Id="scB139AC5FC680862F7102BCCECF00D955" Name="DCSSReplay" Directory="DesktopFolder" Description="Play ttyrec files with visuals" WorkingDirectory="EXEFOLDER" />
                 </File>
+              </Component>
+              <Component Id="owcA72DA8B1F0576D7417C1B0BA26EA0984" Guid="55b4e809-8a5b-4095-a02a-95cece143f95">
+                <File Id="owfA72DA8B1F0576D7417C1B0BA26EA0984" Source="$(var.SourceDir)\bin\x86\Release\TtyRecMonkey.exe.config" KeyPath="yes" />
               </Component>
               <Component Id="owcB031A83EDADDAF9DFDC682132689ED54" Guid="44ba5d4b-714e-156f-af48-e8c9bfe19f93">
                 <File Id="owfB031A83EDADDAF9DFDC682132689ED54" Source="$(var.SourceDir)\bin\x86\Release\Window.dll" KeyPath="yes" />
