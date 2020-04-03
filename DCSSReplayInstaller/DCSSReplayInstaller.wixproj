@@ -41,6 +41,7 @@
     <Folder Include="Code" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Code\NetFx472.wxs" />
     <Compile Include="Code\Product.wxs" />
     <Compile Include="Code\Features.wxs" />
     <Compile Include="Code\IISMeta.wxs" />
@@ -48,6 +49,10 @@
     <Compile Include="Code\UI-CustomDialog.wxs" />
   </ItemGroup>
   <ItemGroup>
+    <WixExtension Include="WixUtilExtension">
+      <HintPath>$(WixExtDir)\WixUtilExtension.dll</HintPath>
+      <Name>WixUtilExtension</Name>
+    </WixExtension>
     <WixExtension Include="WixIIsExtension">
       <HintPath>$(WixExtDir)\WixIIsExtension.dll</HintPath>
       <Name>WixIIsExtension</Name>
