@@ -23,4 +23,6 @@
 #### to your DCSSReplay source folder
 
 
-#### You also need to have built the main project with release configuration
+### You also need to have built the main project with release configuration at least once
+
+### Finally Rebuild the DCSSReplayInstaller Solution as Release and the installer should appear in the bin folder.
