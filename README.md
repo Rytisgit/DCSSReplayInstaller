@@ -17,10 +17,10 @@
 
 #### update DCSSReplayInstallerMM.wxs line 5
 
-` <?define SourceDir="C:\source\ttyrecPlayer\ttyrecTiles"?>
+` <?define SourceDir="C:\source\DCSSReplay"?>
 `
 
-#### to your DCSSReplay source folder
+#### to your DCSSReplay git source folder
 
 ### You also need to have built the main project with release configuration at least once
 
