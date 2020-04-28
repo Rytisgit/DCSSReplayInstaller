@@ -71,6 +71,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\Banner.jpg" />
+    <Content Include="Resources\dcssreplay.ico" />
     <Content Include="Resources\Dialog.jpg" />
     <Content Include="Resources\EULA.rtf" />
     <Content Include="Resources\Icon.ico" />

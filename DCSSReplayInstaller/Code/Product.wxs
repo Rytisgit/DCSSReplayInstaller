@@ -21,8 +21,8 @@
     <Condition Message="[ProductName] requires .NET Framework 4.7.2."><![CDATA[WIX_IS_NETFRAMEWORK_472_OR_LATER_INSTALLED]]></Condition>
 
     <!-- Include User Interface Experience -->
-    <Icon Id="Icon.ico" SourceFile="Resources\Icon.ico"/>
-    <Property Id="ARPPRODUCTICON" Value="Icon.ico"></Property>
+    <Icon Id="dcssreplay.ico" SourceFile="Resources\dcssreplay.ico"/>
+    <Property Id="ARPPRODUCTICON" Value="dcssreplay.ico"></Property>
     <UIRef Id="UI"/>
 
     <!-- Include Features and Directories Fragment -->
