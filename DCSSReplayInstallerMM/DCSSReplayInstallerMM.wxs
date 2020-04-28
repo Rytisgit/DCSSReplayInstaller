@@ -2,12 +2,51 @@
 <Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
   <?define ComponentRules="OneToOne"?>
   <!-- SourceDir instructs IsWiX the location of the directory that contains files for this merge module -->
-  <?define SourceDir="C:\source\ttyrecPlayer\ttyrecTiles"?>
-  <Module Id="DCSSReplayInstallerMM" Language="1033" Version="1.0.0.0">
+  <?define SourceDir="C:\source\DCSSReplay"?>
+  <Module Id="DCSSReplayInstallerMM" Language="1033" Version="0.7.0.0">
     <Package Id="732e35f2-67ae-4d0d-8bac-e6929a428783" Manufacturer="DCSSReplayInstallerMM" InstallerVersion="200" />
     <Directory Id="TARGETDIR" Name="SourceDir">
       <Directory Id="DesktopFolder" />
       <Directory Id="MergeRedirectFolder">
+        <Directory Id="owd00BD073775AEE2E88B74CCEE86DD7715" Name="bin">
+          <Directory Id="owd54A2E0B01ECF9DD808BEE4DCCBC53BF2" Name="x86">
+            <Directory Id="owd29D578A6F2C9F47BD6A398D676E67C46" Name="Release">
+              <Component Id="owc5AA13260C46134DC370CEAE4E3180160" Guid="87371ff4-a2c5-fdef-1694-4524d0c6a523">
+                <File Id="owf5AA13260C46134DC370CEAE4E3180160" Source="$(var.SourceDir)\bin\x86\Release\FrameGenerator.dll" KeyPath="yes" />
+              </Component>
+              <Component Id="owc1542354C0E9E08460773C84E6801A3D4" Guid="beb3ff07-5548-6001-9655-5b170dc837f5">
+                <File Id="owf1542354C0E9E08460773C84E6801A3D4" Source="$(var.SourceDir)\bin\x86\Release\ICSharpCode.SharpZipLib.dll" KeyPath="yes" />
+              </Component>
+              <Component Id="owc02418BA97E343B22C5919E11AE14D410" Guid="2b137bd6-31fc-29ca-9162-9c1a2c52a61b">
+                <File Id="owf02418BA97E343B22C5919E11AE14D410" Source="$(var.SourceDir)\bin\x86\Release\InputParser.dll" KeyPath="yes" />
+              </Component>
+              <Component Id="owc0DDF8845703A432648CB382FFBBFA1F5" Guid="7be1a50a-24ff-65d6-8e16-1e0f5b920986">
+                <File Id="owf0DDF8845703A432648CB382FFBBFA1F5" Source="$(var.SourceDir)\bin\x86\Release\PuttyDLL.dll" KeyPath="yes" />
+              </Component>
+              <Component Id="owc1867913EA00FACD6A35190DD55AC006C" Guid="f1852960-3d0d-6757-b3fd-82fc767b086a">
+                <File Id="owf1867913EA00FACD6A35190DD55AC006C" Source="$(var.SourceDir)\bin\x86\Release\PuttyDLL.exp" KeyPath="yes" />
+              </Component>
+              <Component Id="owc5E181E4BBC85BACDA7871B61076BE03A" Guid="000392fc-c766-ab18-4d22-66d01b8b6b9b">
+                <File Id="owf5E181E4BBC85BACDA7871B61076BE03A" Source="$(var.SourceDir)\bin\x86\Release\PuttyDLL.lib" KeyPath="yes" />
+              </Component>
+              <Component Id="owcD3FB4B3702AE68BA8984FC324EE6513E" Guid="466d3a15-88a0-ecc4-90c5-d2d6733a3b66">
+                <File Id="owfD3FB4B3702AE68BA8984FC324EE6513E" Source="$(var.SourceDir)\bin\x86\Release\PuttySharp.dll" KeyPath="yes" />
+              </Component>
+              <Component Id="owcF2B883FDEB391FD094190F917E094875" Guid="625d9b19-1052-c562-5559-e200e8d8a0d7">
+                <File Id="owfF2B883FDEB391FD094190F917E094875" Source="$(var.SourceDir)\bin\x86\Release\System.Drawing.Common.dll" KeyPath="yes" />
+              </Component>
+              <Component Id="owcC6D2EFF1C557EA0CD3B057F3F87406FB" Guid="f0257f35-90b6-2a42-1230-595cd968643e">
+                <File Id="owfC6D2EFF1C557EA0CD3B057F3F87406FB" Source="$(var.SourceDir)\bin\x86\Release\TtyRecDecoder.dll" KeyPath="yes" />
+              </Component>
+              <Component Id="owcDF72471137C9DC4299D4191F1284B913" Guid="a04e41f0-a6a2-e37a-f50f-0a6b0be04ea5">
+                <File Id="owfDF72471137C9DC4299D4191F1284B913" Source="$(var.SourceDir)\bin\x86\Release\TtyRecMonkey.exe" KeyPath="yes" />
+              </Component>
+              <Component Id="owc1ED501F0A977043723EE0F20E222AD36" Guid="06984575-3ce7-029d-25b0-c85c056a13d6">
+                <File Id="owf1ED501F0A977043723EE0F20E222AD36" Source="$(var.SourceDir)\bin\x86\Release\TtyRecMonkey.exe.config" KeyPath="yes" />
+              </Component>
+            </Directory>
+          </Directory>
+        </Directory>
         <Directory Id="owd21099468CAA81499D3FD2DA6F3D07DF8" Name="Extra">
           <Component Id="owc8DD4EACBBE3DCD5AD85B8D6E49C537B2" Guid="e28d0905-926e-894d-2f86-3640bb7382bb">
             <File Id="owf8DD4EACBBE3DCD5AD85B8D6E49C537B2" Source="$(var.SourceDir)\Extra\clouds.txt" KeyPath="yes" />
@@ -41,6 +80,9 @@
           </Component>
           <Component Id="owc1DBEBF985108006AFFC8FB2D760EE542" Guid="72b059b9-f71e-3e28-ca1d-823a893522ed">
             <File Id="owf1DBEBF985108006AFFC8FB2D760EE542" Source="$(var.SourceDir)\Extra\unknown_potion.png" KeyPath="yes" />
+          </Component>
+          <Component Id="owc4D8F74F0B3850B5C4093B141B2686252" Guid="6015643a-68b6-b811-3250-86f2f33e9bf0">
+            <File Id="owf4D8F74F0B3850B5C4093B141B2686252" Source="$(var.SourceDir)\Extra\weapons.txt" KeyPath="yes" />
           </Component>
           <Directory Id="owd928B7B5A961E13E5D7100991A8F93E03" Name="rltiles">
             <Component Id="owc6EDBD92864D0C0495268B1F0E2C93624" Guid="a9b0ee05-e308-4fa8-6569-70b0c7c6f46d">
@@ -8068,6 +8110,11 @@
                   </Component>
                 </Directory>
               </Directory>
+              <Directory Id="owd9DC175D7794FCA9B34183DEDF108B6AB" Name="corpse">
+                <Component Id="owc99A788073E3CBA2B984911DAEEBE757A" Guid="5b38b27f-dd8e-223a-acc6-1138e256eb2d">
+                  <File Id="owf99A788073E3CBA2B984911DAEEBE757A" Source="$(var.SourceDir)\Extra\rltiles\item\corpse\corpse.png" KeyPath="yes" />
+                </Component>
+              </Directory>
               <Directory Id="owd683A1E30F5C8A67445A2165313877DB4" Name="food">
                 <Component Id="owcE311025B0D77280479E2DAE3BD149EBC" Guid="6b88398a-bb9a-bf19-1dbe-67dc1da76ba6">
                   <File Id="owfE311025B0D77280479E2DAE3BD149EBC" Source="$(var.SourceDir)\Extra\rltiles\item\food\apple.png" KeyPath="yes" />
@@ -10780,17 +10827,11 @@
                 <Component Id="owcEF9E49D81C947894A90FA599EC2BFC7B" Guid="97de77af-657b-2e8a-f73f-e4ebb4c0786a">
                   <File Id="owfEF9E49D81C947894A90FA599EC2BFC7B" Source="$(var.SourceDir)\Extra\rltiles\mon\amorphous\death_ooze.png" KeyPath="yes" />
                 </Component>
-                <Component Id="owc5ACAAA79F8970B5DEAC97496489893FF" Guid="f4524068-aeb3-3e90-923d-50b5822661b2">
-                  <File Id="owf5ACAAA79F8970B5DEAC97496489893FF" Source="$(var.SourceDir)\Extra\rltiles\mon\amorphous\enormous_slime_creature.png" KeyPath="yes" />
-                </Component>
                 <Component Id="owc8B79772293DB28089D10296AE579621F" Guid="5f1c7041-aef1-865b-c2f9-9d935bab60e2">
                   <File Id="owf8B79772293DB28089D10296AE579621F" Source="$(var.SourceDir)\Extra\rltiles\mon\amorphous\glowing_shapeshifter.png" KeyPath="yes" />
                 </Component>
                 <Component Id="owc3273B8F8EF8EB03E5655D80ACC042872" Guid="f444b30c-5970-a58e-0091-e7dac128e396">
                   <File Id="owf3273B8F8EF8EB03E5655D80ACC042872" Source="$(var.SourceDir)\Extra\rltiles\mon\amorphous\jelly.png" KeyPath="yes" />
-                </Component>
-                <Component Id="owc4A2BBFD3D34C9953E4003F8092720E12" Guid="238c9095-ec18-d42b-6fa4-0b68a98b70f9">
-                  <File Id="owf4A2BBFD3D34C9953E4003F8092720E12" Source="$(var.SourceDir)\Extra\rltiles\mon\amorphous\large_slime_creature.png" KeyPath="yes" />
                 </Component>
                 <Component Id="owc37C473A100E232C68B7967A84FACB75C" Guid="6ce09339-b83a-b030-667e-bc29ef4bf4c8">
                   <File Id="owf37C473A100E232C68B7967A84FACB75C" Source="$(var.SourceDir)\Extra\rltiles\mon\amorphous\ooze.png" KeyPath="yes" />
@@ -10801,11 +10842,17 @@
                 <Component Id="owc2EABCC10263882E74DF8D3653D6F77B2" Guid="1c426099-e876-a3c1-d5a9-f04694b483cf">
                   <File Id="owf2EABCC10263882E74DF8D3653D6F77B2" Source="$(var.SourceDir)\Extra\rltiles\mon\amorphous\slime_creature.png" KeyPath="yes" />
                 </Component>
-                <Component Id="owc7544773CEC4124B51FBE9BC1B40A13CC" Guid="4815ebcf-8acf-01b3-6b0c-4bb2f924cdec">
-                  <File Id="owf7544773CEC4124B51FBE9BC1B40A13CC" Source="$(var.SourceDir)\Extra\rltiles\mon\amorphous\titanic_slime_creature.png" KeyPath="yes" />
+                <Component Id="owc649130DE036F1E5E43E4230D9B08DCA1" Guid="700d68f8-4e15-7230-dfb8-dc572c6ff0e2">
+                  <File Id="owf649130DE036F1E5E43E4230D9B08DCA1" Source="$(var.SourceDir)\Extra\rltiles\mon\amorphous\slime_creature2.png" KeyPath="yes" />
                 </Component>
-                <Component Id="owcDD1E0F6990F9659C84D858902941E4BA" Guid="9a2c52d4-e5ba-288a-c361-3b66ac42c598">
-                  <File Id="owfDD1E0F6990F9659C84D858902941E4BA" Source="$(var.SourceDir)\Extra\rltiles\mon\amorphous\very_slime_creature.png" KeyPath="yes" />
+                <Component Id="owcB652C107369062C28E1D228066AD13D8" Guid="e53ec988-aad2-c30f-ff02-1cb0c6dbb50e">
+                  <File Id="owfB652C107369062C28E1D228066AD13D8" Source="$(var.SourceDir)\Extra\rltiles\mon\amorphous\slime_creature3.png" KeyPath="yes" />
+                </Component>
+                <Component Id="owcBE5C9FFE5A121A3D8DA3C130A4E60C32" Guid="061652b5-29e6-e1a8-e331-1ea1abf6e311">
+                  <File Id="owfBE5C9FFE5A121A3D8DA3C130A4E60C32" Source="$(var.SourceDir)\Extra\rltiles\mon\amorphous\slime_creature4.png" KeyPath="yes" />
+                </Component>
+                <Component Id="owc1952EE7D4C28C4B8554F21F89351BC1F" Guid="d33d8736-9aa8-c97e-b65d-210db2b7bd3d">
+                  <File Id="owf1952EE7D4C28C4B8554F21F89351BC1F" Source="$(var.SourceDir)\Extra\rltiles\mon\amorphous\slime_creature5.png" KeyPath="yes" />
                 </Component>
               </Directory>
               <Directory Id="owd76574D29F302A82B61264BE3C1A1226A" Name="animals">
@@ -15969,6 +16016,9 @@
                 <Component Id="owc7706551C994EC26A992E2BCF769F36DD" Guid="f29915e6-4df6-0e85-b024-8f157baceb9f">
                   <File Id="owf7706551C994EC26A992E2BCF769F36DD" Source="$(var.SourceDir)\Extra\rltiles\player\hand1\arwen.png" KeyPath="yes" />
                 </Component>
+                <Component Id="owcD949F5996635E0A8FAE039883A2F94B5" Guid="ff559175-8535-fc99-f616-cb055f2fd9a6">
+                  <File Id="owfD949F5996635E0A8FAE039883A2F94B5" Source="$(var.SourceDir)\Extra\rltiles\player\hand1\autumn_katana.png" KeyPath="yes" />
+                </Component>
                 <Component Id="owc12DDE7EB9F09F421DC1914C942F2BB0A" Guid="78db4231-cb68-da46-beaa-63fc5bc05b84">
                   <File Id="owf12DDE7EB9F09F421DC1914C942F2BB0A" Source="$(var.SourceDir)\Extra\rltiles\player\hand1\axe_blood.png" KeyPath="yes" />
                 </Component>
@@ -16011,12 +16061,6 @@
                 <Component Id="owc8265C7CE0F3539453AAAD383DDBEA2C6" Guid="0716c85e-f13d-9f3f-3f28-3e4026070f60">
                   <File Id="owf8265C7CE0F3539453AAAD383DDBEA2C6" Source="$(var.SourceDir)\Extra\rltiles\player\hand1\bow.png" KeyPath="yes" />
                 </Component>
-                <Component Id="owc25829883CEAF23C5380C939E9CC9C35B" Guid="94f8a4c9-e312-d46b-d653-c873807d43bc">
-                  <File Id="owf25829883CEAF23C5380C939E9CC9C35B" Source="$(var.SourceDir)\Extra\rltiles\player\hand1\bow_three.png" KeyPath="yes" />
-                </Component>
-                <Component Id="owc07B7C8828E4FE9BCE88D20D88DCA9B7B" Guid="10c20ecb-0000-5cb6-b561-b1807aebed5e">
-                  <File Id="owf07B7C8828E4FE9BCE88D20D88DCA9B7B" Source="$(var.SourceDir)\Extra\rltiles\player\hand1\bow_two.png" KeyPath="yes" />
-                </Component>
                 <Component Id="owc09B1818A6072DF8B4F765A01186BE814" Guid="bcb0b759-d349-cce3-136e-b91796404986">
                   <File Id="owf09B1818A6072DF8B4F765A01186BE814" Source="$(var.SourceDir)\Extra\rltiles\player\hand1\broad_axe.png" KeyPath="yes" />
                 </Component>
@@ -16040,6 +16084,9 @@
                 </Component>
                 <Component Id="owcA92C85B406D563E9CED47E0884538609" Guid="87b4a900-7f64-24b8-14fa-5dd616c2492f">
                   <File Id="owfA92C85B406D563E9CED47E0884538609" Source="$(var.SourceDir)\Extra\rltiles\player\hand1\d_glaive.png" KeyPath="yes" />
+                </Component>
+                <Component Id="owc551F051C3CED11E88F215D211C6DCFA7" Guid="84762ce6-be87-8efa-3ff4-ae447a80f087">
+                  <File Id="owf551F051C3CED11E88F215D211C6DCFA7" Source="$(var.SourceDir)\Extra\rltiles\player\hand1\dagger.png" KeyPath="yes" />
                 </Component>
                 <Component Id="owc1A4488F6EFAE48C9808B66059A2EC8EE" Guid="c68b2ea8-5715-338d-c8fa-a0ae7d6db155">
                   <File Id="owf1A4488F6EFAE48C9808B66059A2EC8EE" Source="$(var.SourceDir)\Extra\rltiles\player\hand1\dagger_hand.png" KeyPath="yes" />
@@ -16131,9 +16178,6 @@
                 <Component Id="owc715177CFA6A09A7E04A83A2512CF6719" Guid="fb96c051-9e42-373b-bc3d-1e3b78328e24">
                   <File Id="owf715177CFA6A09A7E04A83A2512CF6719" Source="$(var.SourceDir)\Extra\rltiles\player\hand1\giant_club_plain.png" KeyPath="yes" />
                 </Component>
-                <Component Id="owc09AC6697A965B73BE6EF7C078A62B930" Guid="6bf67e2e-05ca-adc9-7848-adf2c10aa33f">
-                  <File Id="owf09AC6697A965B73BE6EF7C078A62B930" Source="$(var.SourceDir)\Extra\rltiles\player\hand1\giant_club_slant.png" KeyPath="yes" />
-                </Component>
                 <Component Id="owc79E6E3E0B8003930B9DE26C8CB2650A8" Guid="f185bf91-7067-c716-153d-8dc9c536dd01">
                   <File Id="owf79E6E3E0B8003930B9DE26C8CB2650A8" Source="$(var.SourceDir)\Extra\rltiles\player\hand1\giant_club_spike.png" KeyPath="yes" />
                 </Component>
@@ -16158,9 +16202,6 @@
                 <Component Id="owc492DEF316FBCFA41620069A7D8FD4646" Guid="62e879ff-4688-4d28-100f-0facf5fece6e">
                   <File Id="owf492DEF316FBCFA41620069A7D8FD4646" Source="$(var.SourceDir)\Extra\rltiles\player\hand1\glaive2.png" KeyPath="yes" />
                 </Component>
-                <Component Id="owc8A98A5DE9EF063D3093D876C3E101728" Guid="f146a2d7-acdb-3d65-c256-18d6852db72a">
-                  <File Id="owf8A98A5DE9EF063D3093D876C3E101728" Source="$(var.SourceDir)\Extra\rltiles\player\hand1\great_bow.png" KeyPath="yes" />
-                </Component>
                 <Component Id="owcF3E2E882985E34CF2F14185F97C67A55" Guid="5ca9d46d-35a9-b74b-fb95-b9ad0addcc15">
                   <File Id="owfF3E2E882985E34CF2F14185F97C67A55" Source="$(var.SourceDir)\Extra\rltiles\player\hand1\great_mace.png" KeyPath="yes" />
                 </Component>
@@ -16170,8 +16211,8 @@
                 <Component Id="owc5CFF044FB960D0A4D6465FDC8111E32F" Guid="823563c2-73f2-9351-16b7-579f58f67b86">
                   <File Id="owf5CFF044FB960D0A4D6465FDC8111E32F" Source="$(var.SourceDir)\Extra\rltiles\player\hand1\great_staff.png" KeyPath="yes" />
                 </Component>
-                <Component Id="owc2D0E6CB53002FBB22697F5ACAD8D13DA" Guid="9527581c-47e7-9278-efc6-f4f82f65b84d">
-                  <File Id="owf2D0E6CB53002FBB22697F5ACAD8D13DA" Source="$(var.SourceDir)\Extra\rltiles\player\hand1\great_sword_slant.png" KeyPath="yes" />
+                <Component Id="owc0A46909BFDC9FCEFAF7DD2E3D492909F" Guid="cb21a4be-89dd-7713-97e4-2890ca79b567">
+                  <File Id="owf0A46909BFDC9FCEFAF7DD2E3D492909F" Source="$(var.SourceDir)\Extra\rltiles\player\hand1\great_sword.png" KeyPath="yes" />
                 </Component>
                 <Component Id="owcFE14B063BE257AF3D7A0C6A056D4FE75" Guid="90a47f4c-3082-e88a-e252-ca3e11d2112f">
                   <File Id="owfFE14B063BE257AF3D7A0C6A056D4FE75" Source="$(var.SourceDir)\Extra\rltiles\player\hand1\great_sword_slant2.png" KeyPath="yes" />
@@ -16197,8 +16238,8 @@
                 <Component Id="owc8AFC17E24A6F6CA11CD4C4F8895B8B55" Guid="ad8a7ab3-6a92-ee86-67d6-6284394238ee">
                   <File Id="owf8AFC17E24A6F6CA11CD4C4F8895B8B55" Source="$(var.SourceDir)\Extra\rltiles\player\hand1\hook.png" KeyPath="yes" />
                 </Component>
-                <Component Id="owc7E5E03F33EE3469A0CB5CF2283847C04" Guid="d15b1b3a-1c0c-f61f-ed93-d81502ccc982">
-                  <File Id="owf7E5E03F33EE3469A0CB5CF2283847C04" Source="$(var.SourceDir)\Extra\rltiles\player\hand1\katana_slant.png" KeyPath="yes" />
+                <Component Id="owc6EDD74D113EF3BAB75DDD8CC7E5CC6A7" Guid="fba59fda-ea58-aa42-46ed-07a9a8b34834">
+                  <File Id="owf6EDD74D113EF3BAB75DDD8CC7E5CC6A7" Source="$(var.SourceDir)\Extra\rltiles\player\hand1\katana.png" KeyPath="yes" />
                 </Component>
                 <Component Id="owc749E8CB7A87D5CE64B2CC04A56ECE23F" Guid="37dc4065-cc9e-4a83-4685-c62f3a60393b">
                   <File Id="owf749E8CB7A87D5CE64B2CC04A56ECE23F" Source="$(var.SourceDir)\Extra\rltiles\player\hand1\knife.png" KeyPath="yes" />
@@ -16224,11 +16265,14 @@
                 <Component Id="owcE8824ABA7673481965AC13729A94E3E0" Guid="650c974b-f5e7-bcde-25a2-b4f2eedd04de">
                   <File Id="owfE8824ABA7673481965AC13729A94E3E0" Source="$(var.SourceDir)\Extra\rltiles\player\hand1\legolas.png" KeyPath="yes" />
                 </Component>
-                <Component Id="owc0D9CAEB7E76C011307A2594845786895" Guid="8dc9a0a3-d7c7-e982-af21-9d00a56f120a">
-                  <File Id="owf0D9CAEB7E76C011307A2594845786895" Source="$(var.SourceDir)\Extra\rltiles\player\hand1\long_sword_slant.png" KeyPath="yes" />
+                <Component Id="owc6F49909CA538ECA893F4CC7CEF18FB9F" Guid="1855bac3-7303-b9a8-cf2a-2656c5a956ce">
+                  <File Id="owf6F49909CA538ECA893F4CC7CEF18FB9F" Source="$(var.SourceDir)\Extra\rltiles\player\hand1\long_sword.png" KeyPath="yes" />
                 </Component>
                 <Component Id="owcD069D2DB13549443AFB423C278B05248" Guid="9537bf0a-d8a8-1ab2-501f-eabb10544d27">
                   <File Id="owfD069D2DB13549443AFB423C278B05248" Source="$(var.SourceDir)\Extra\rltiles\player\hand1\long_sword_slant2.png" KeyPath="yes" />
+                </Component>
+                <Component Id="owc815D253FA869218015AABABF03C907D3" Guid="709dcd05-221c-3b31-4b7d-e51e1c9ea6f5">
+                  <File Id="owf815D253FA869218015AABABF03C907D3" Source="$(var.SourceDir)\Extra\rltiles\player\hand1\longbow.png" KeyPath="yes" />
                 </Component>
                 <Component Id="owc39682265F4C3390571B1697AFBBD04EA" Guid="b9de9055-f763-c159-75bb-64e5f627fcfd">
                   <File Id="owf39682265F4C3390571B1697AFBBD04EA" Source="$(var.SourceDir)\Extra\rltiles\player\hand1\mace.png" KeyPath="yes" />
@@ -16256,6 +16300,9 @@
                 </Component>
                 <Component Id="owcCAE3E8D29B22C283B299F52016A73C26" Guid="76f1848d-a015-a6d9-ee57-d58d788820a3">
                   <File Id="owfCAE3E8D29B22C283B299F52016A73C26" Source="$(var.SourceDir)\Extra\rltiles\player\hand1\pick_axe.png" KeyPath="yes" />
+                </Component>
+                <Component Id="owc89F9B23C03C9D1CF9726ED2691B9F32E" Guid="12894acd-5511-a924-a76e-2d9686946df4">
+                  <File Id="owf89F9B23C03C9D1CF9726ED2691B9F32E" Source="$(var.SourceDir)\Extra\rltiles\player\hand1\piercer.png" KeyPath="yes" />
                 </Component>
                 <Component Id="owc79D67515AFFA48B38D5643E36FED7861" Guid="ae01f208-479c-9ed3-da89-a7fd360f768f">
                   <File Id="owf79D67515AFFA48B38D5643E36FED7861" Source="$(var.SourceDir)\Extra\rltiles\player\hand1\pike.png" KeyPath="yes" />
@@ -16359,8 +16406,14 @@
                 <Component Id="owc56D03690CAEBB378F5DA253E8211113A" Guid="62515014-9ece-9b89-1bb0-4ce0625417f3">
                   <File Id="owf56D03690CAEBB378F5DA253E8211113A" Source="$(var.SourceDir)\Extra\rltiles\player\hand1\short_sword_two.png" KeyPath="yes" />
                 </Component>
+                <Component Id="owcEBCFE71F30103FAC7EEBCDBEB58D58B9" Guid="e93d0e12-5587-968b-3377-971abfd4c19c">
+                  <File Id="owfEBCFE71F30103FAC7EEBCDBEB58D58B9" Source="$(var.SourceDir)\Extra\rltiles\player\hand1\shortbow.png" KeyPath="yes" />
+                </Component>
                 <Component Id="owc2C8CBA33F8D7DDE666EED84413588E55" Guid="2bb3d463-35b1-9246-3fa8-14c07a09a39d">
                   <File Id="owf2C8CBA33F8D7DDE666EED84413588E55" Source="$(var.SourceDir)\Extra\rltiles\player\hand1\sickle.png" KeyPath="yes" />
+                </Component>
+                <Component Id="owcF1DB0AB1F31209BC6A3F2066148BA1EA" Guid="0e5ac228-71f3-edcb-db16-6503f355ee39">
+                  <File Id="owfF1DB0AB1F31209BC6A3F2066148BA1EA" Source="$(var.SourceDir)\Extra\rltiles\player\hand1\skullcrusher.png" KeyPath="yes" />
                 </Component>
                 <Component Id="owc56F204A6AE21557AA003619FE7CCC6D0" Guid="6c3948d3-17f0-1f6e-8e1d-3ff0cb9f45c9">
                   <File Id="owf56F204A6AE21557AA003619FE7CCC6D0" Source="$(var.SourceDir)\Extra\rltiles\player\hand1\sling.png" KeyPath="yes" />
@@ -16440,14 +16493,14 @@
                 <Component Id="owc67B04859C34A1349B046F6879C503DFC" Guid="15c08d7b-9d0c-2683-22c6-71db1d44f975">
                   <File Id="owf67B04859C34A1349B046F6879C503DFC" Source="$(var.SourceDir)\Extra\rltiles\player\hand1\sword_jag.png" KeyPath="yes" />
                 </Component>
+                <Component Id="owc8B767490742F95B1C55FA27420CF7B4B" Guid="62c3ddff-733f-e233-e9a8-67341c543c1e">
+                  <File Id="owf8B767490742F95B1C55FA27420CF7B4B" Source="$(var.SourceDir)\Extra\rltiles\player\hand1\sword_of_cerebov.png" KeyPath="yes" />
+                </Component>
                 <Component Id="owc69A11726B6090F76C2D8D2450D9B39CD" Guid="eac1869d-07b6-3e99-4367-279691c75539">
                   <File Id="owf69A11726B6090F76C2D8D2450D9B39CD" Source="$(var.SourceDir)\Extra\rltiles\player\hand1\sword_thief.png" KeyPath="yes" />
                 </Component>
                 <Component Id="owc5C2F257FF727D9E07ED969D067818262" Guid="0b983320-2664-92a7-eeb2-55e1572617d8">
                   <File Id="owf5C2F257FF727D9E07ED969D067818262" Source="$(var.SourceDir)\Extra\rltiles\player\hand1\sword_three.png" KeyPath="yes" />
-                </Component>
-                <Component Id="owcF300CDA70047AF40F51CEDD33545FCD1" Guid="cc51f986-643f-5630-982e-fba932f6905e">
-                  <File Id="owfF300CDA70047AF40F51CEDD33545FCD1" Source="$(var.SourceDir)\Extra\rltiles\player\hand1\sword_twist.png" KeyPath="yes" />
                 </Component>
                 <Component Id="owc72F2E28973F8F394ECAD5AD0B9AD701F" Guid="d9932cbd-1931-1a70-d221-1ffae5f1e297">
                   <File Id="owf72F2E28973F8F394ECAD5AD0B9AD701F" Source="$(var.SourceDir)\Extra\rltiles\player\hand1\sword_two.png" KeyPath="yes" />
@@ -16501,14 +16554,8 @@
                   <Component Id="owc11FA6E4946D62027D80362BA89831188" Guid="3734d1d6-6b15-f092-d6ac-0a6eef0819d7">
                     <File Id="owf11FA6E4946D62027D80362BA89831188" Source="$(var.SourceDir)\Extra\rltiles\player\hand1\artefact\arga.png" KeyPath="yes" />
                   </Component>
-                  <Component Id="owcD7D70402B81055C1799FAEFD2AA051AA" Guid="47e37fcb-86da-bfa9-3444-7f458451ff86">
-                    <File Id="owfD7D70402B81055C1799FAEFD2AA051AA" Source="$(var.SourceDir)\Extra\rltiles\player\hand1\artefact\asmodeus.png" KeyPath="yes" />
-                  </Component>
                   <Component Id="owcC6B1581340EA7BE4A0F82F43E2602E8B" Guid="6e01f0e2-3a45-c07f-27ef-f475835fae1a">
                     <File Id="owfC6B1581340EA7BE4A0F82F43E2602E8B" Source="$(var.SourceDir)\Extra\rltiles\player\hand1\artefact\axe_of_woe.png" KeyPath="yes" />
-                  </Component>
-                  <Component Id="owc05493EE8663ED804A3AA0C2489DEA888" Guid="1480d99c-88c4-fe8a-c060-1d12d2ec1b8b">
-                    <File Id="owf05493EE8663ED804A3AA0C2489DEA888" Source="$(var.SourceDir)\Extra\rltiles\player\hand1\artefact\axe_trog.png" KeyPath="yes" />
                   </Component>
                   <Component Id="owc33E6690C877152DBD0F6F34C03A4092D" Guid="a0e61f5d-718d-3932-ab7b-a30519600a30">
                     <File Id="owf33E6690C877152DBD0F6F34C03A4092D" Source="$(var.SourceDir)\Extra\rltiles\player\hand1\artefact\battle_staff.png" KeyPath="yes" />
@@ -16516,35 +16563,29 @@
                   <Component Id="owc80A2BDC1473497C1A23C049BC97CD91A" Guid="1002fac9-b7df-47a6-d6c2-115e0ba9230e">
                     <File Id="owf80A2BDC1473497C1A23C049BC97CD91A" Source="$(var.SourceDir)\Extra\rltiles\player\hand1\artefact\bloodbane.png" KeyPath="yes" />
                   </Component>
-                  <Component Id="owcA86FF296518F5BEC06A21B35C64D9800" Guid="a9b6c45f-0a4d-222e-9e77-fa25c2485c05">
-                    <File Id="owfA86FF296518F5BEC06A21B35C64D9800" Source="$(var.SourceDir)\Extra\rltiles\player\hand1\artefact\blowgun_assassin.png" KeyPath="yes" />
+                  <Component Id="owcA8F6C4AB741BC8C99AF122D9C7FFD6A0" Guid="dd4167bb-1ec8-caf0-8f52-250524aeef01">
+                    <File Id="owfA8F6C4AB741BC8C99AF122D9C7FFD6A0" Source="$(var.SourceDir)\Extra\rltiles\player\hand1\artefact\blowgun_of_the_assassin.png" KeyPath="yes" />
                   </Component>
-                  <Component Id="owc7677B92E65F6DEEA6150F4888D8F30F8" Guid="e953781b-a774-7c97-3bf2-6d0538e1ecf9">
-                    <File Id="owf7677B92E65F6DEEA6150F4888D8F30F8" Source="$(var.SourceDir)\Extra\rltiles\player\hand1\artefact\botono.png" KeyPath="yes" />
+                  <Component Id="owc77692C8EA26F52DE6557BB3EC86BE919" Guid="bfe23f15-5097-ea1d-ea35-2182366b5b93">
+                    <File Id="owf77692C8EA26F52DE6557BB3EC86BE919" Source="$(var.SourceDir)\Extra\rltiles\player\hand1\artefact\brilliance.png" KeyPath="yes" />
                   </Component>
-                  <Component Id="owc36C7E5F3C74D200E5F48BC39E52EFE97" Guid="cff2af47-99d1-98b4-6e44-76068dfadbc3">
-                    <File Id="owf36C7E5F3C74D200E5F48BC39E52EFE97" Source="$(var.SourceDir)\Extra\rltiles\player\hand1\artefact\capt_cutlass.png" KeyPath="yes" />
+                  <Component Id="owc22CE95EE71EDF765C0FA0D5F3BADE7EA" Guid="69664894-81e1-7881-8726-9d3a03c1b24c">
+                    <File Id="owf22CE95EE71EDF765C0FA0D5F3BADE7EA" Source="$(var.SourceDir)\Extra\rltiles\player\hand1\artefact\captains_cutlass.png" KeyPath="yes" />
                   </Component>
-                  <Component Id="owc0B397BC1C37E825753CA1FD99F8190CB" Guid="158762d3-f18e-670b-d95d-0d4b0507686d">
-                    <File Id="owf0B397BC1C37E825753CA1FD99F8190CB" Source="$(var.SourceDir)\Extra\rltiles\player\hand1\artefact\chilly_death.png" KeyPath="yes" />
+                  <Component Id="owcF5B308CDD80B0D0BCB3E8C809385C168" Guid="524e5840-fe20-7647-5526-b5d7cb3088a7">
+                    <File Id="owfF5B308CDD80B0D0BCB3E8C809385C168" Source="$(var.SourceDir)\Extra\rltiles\player\hand1\artefact\dagger_of_chilly_death.png" KeyPath="yes" />
                   </Component>
-                  <Component Id="owc60A1B55205F16BDC26A6F337CD62E683" Guid="caaf8c1f-fc71-8bd9-6af0-5991090a013b">
-                    <File Id="owf60A1B55205F16BDC26A6F337CD62E683" Source="$(var.SourceDir)\Extra\rltiles\player\hand1\artefact\crossbow_fire.png" KeyPath="yes" />
-                  </Component>
-                  <Component Id="owcBBC8AE9888D1039AD243F165B6F4ADD7" Guid="2dcea119-c5f2-3dab-b143-6a668b659197">
-                    <File Id="owfBBC8AE9888D1039AD243F165B6F4ADD7" Source="$(var.SourceDir)\Extra\rltiles\player\hand1\artefact\crystal_spear.png" KeyPath="yes" />
+                  <Component Id="owcB13E337744E1EEF8D81E241E04F1D431" Guid="33d96ef1-4111-fd56-c7dc-29987115f84a">
+                    <File Id="owfB13E337744E1EEF8D81E241E04F1D431" Source="$(var.SourceDir)\Extra\rltiles\player\hand1\artefact\damnation.png" KeyPath="yes" />
                   </Component>
                   <Component Id="owc371E4F97CAAD69F4D5E4C7E0CD72F4B6" Guid="fd52b494-d72d-68d2-bbc1-61ea7e783a94">
                     <File Id="owf371E4F97CAAD69F4D5E4C7E0CD72F4B6" Source="$(var.SourceDir)\Extra\rltiles\player\hand1\artefact\dark_maul.png" KeyPath="yes" />
                   </Component>
-                  <Component Id="owc1D7893383E224F47ACEDDBCEF5F734AD" Guid="97f559b2-e426-f3c6-f092-e7dea6cd6d05">
-                    <File Id="owf1D7893383E224F47ACEDDBCEF5F734AD" Source="$(var.SourceDir)\Extra\rltiles\player\hand1\artefact\demon_axe.png" KeyPath="yes" />
+                  <Component Id="owc4662C894EB226AB95FDB37B40B21B8AF" Guid="e163ae61-bcb0-a10a-de3d-0ef576c8e666">
+                    <File Id="owf4662C894EB226AB95FDB37B40B21B8AF" Source="$(var.SourceDir)\Extra\rltiles\player\hand1\artefact\devastator.png" KeyPath="yes" />
                   </Component>
                   <Component Id="owc5BCAA55E38C67A4CEDBA33B220869AC3" Guid="8ee0e6b2-84e7-b29e-7192-be4eb512010c">
                     <File Id="owf5BCAA55E38C67A4CEDBA33B220869AC3" Source="$(var.SourceDir)\Extra\rltiles\player\hand1\artefact\dispater.png" KeyPath="yes" />
-                  </Component>
-                  <Component Id="owc18A536B4973F584952D04A5DC96C907F" Guid="eb747a6f-5c7b-0e58-6ca3-8f2aec225b40">
-                    <File Id="owf18A536B4973F584952D04A5DC96C907F" Source="$(var.SourceDir)\Extra\rltiles\player\hand1\artefact\doom_knight.png" KeyPath="yes" />
                   </Component>
                   <Component Id="owc3791D07169A2FCB6964C79BD8B0790D7" Guid="6287eb25-39ce-21cc-aa46-53a2620d9c19">
                     <File Id="owf3791D07169A2FCB6964C79BD8B0790D7" Source="$(var.SourceDir)\Extra\rltiles\player\hand1\artefact\elemental_staff.png" KeyPath="yes" />
@@ -16552,14 +16593,8 @@
                   <Component Id="owcAE1F50CBBDBF00440F14DFA9435B8D45" Guid="78d38fe2-f3ae-0a1d-0bca-a5756840fe15">
                     <File Id="owfAE1F50CBBDBF00440F14DFA9435B8D45" Source="$(var.SourceDir)\Extra\rltiles\player\hand1\artefact\eos.png" KeyPath="yes" />
                   </Component>
-                  <Component Id="owc79D32F581F7192EF211B8DAD319EF759" Guid="b838cd8d-61df-8489-336c-08fa662da102">
-                    <File Id="owf79D32F581F7192EF211B8DAD319EF759" Source="$(var.SourceDir)\Extra\rltiles\player\hand1\artefact\finisher.png" KeyPath="yes" />
-                  </Component>
                   <Component Id="owc63368809A88E776C0820B4655EA75B12" Guid="fd0cbf22-6f1d-ce21-4143-f5edd29a61d2">
                     <File Id="owf63368809A88E776C0820B4655EA75B12" Source="$(var.SourceDir)\Extra\rltiles\player\hand1\artefact\firestarter.png" KeyPath="yes" />
-                  </Component>
-                  <Component Id="owcC3D6E8C1CCA90AC91EEDFE3B3D21D380" Guid="59b74117-abf3-25f8-021b-bc4c3b081973">
-                    <File Id="owfC3D6E8C1CCA90AC91EEDFE3B3D21D380" Source="$(var.SourceDir)\Extra\rltiles\player\hand1\artefact\flaming_death.png" KeyPath="yes" />
                   </Component>
                   <Component Id="owc4BEFADC7AE198D6D669259ADCA1B616B" Guid="e4382a7a-1e62-195f-cabf-89bb6aaff1c8">
                     <File Id="owf4BEFADC7AE198D6D669259ADCA1B616B" Source="$(var.SourceDir)\Extra\rltiles\player\hand1\artefact\frostbite.png" KeyPath="yes" />
@@ -16576,26 +16611,32 @@
                   <Component Id="owc428794A296FA592B16181D39DC23B7E4" Guid="1039b530-cecb-709a-a5ff-a349900bb047">
                     <File Id="owf428794A296FA592B16181D39DC23B7E4" Source="$(var.SourceDir)\Extra\rltiles\player\hand1\artefact\knife_of_accuracy.png" KeyPath="yes" />
                   </Component>
+                  <Component Id="owcF4CB48D41A9B31C1BA8FAE2AA833A607" Guid="47f75167-9f24-1436-71e0-49ccf751125d">
+                    <File Id="owfF4CB48D41A9B31C1BA8FAE2AA833A607" Source="$(var.SourceDir)\Extra\rltiles\player\hand1\artefact\lajatang_of_order.png" KeyPath="yes" />
+                  </Component>
                   <Component Id="owcEEB23396511467B577A8C1E255B051B4" Guid="c3d1baf9-eb31-d7fe-4c0f-745ee796725e">
                     <File Id="owfEEB23396511467B577A8C1E255B051B4" Source="$(var.SourceDir)\Extra\rltiles\player\hand1\artefact\leech.png" KeyPath="yes" />
                   </Component>
-                  <Component Id="owcA923FEF51C5F70EB0CC3FBE23424E8F8" Guid="23e1afab-8333-7653-0711-be4ce15d5302">
-                    <File Id="owfA923FEF51C5F70EB0CC3FBE23424E8F8" Source="$(var.SourceDir)\Extra\rltiles\player\hand1\artefact\mace_of_brilliance.png" KeyPath="yes" />
+                  <Component Id="owc1CD84B580F6CB22DDD5C0838228699E0" Guid="42a2c33c-fe6f-66c4-180b-910b3f61a4f7">
+                    <File Id="owf1CD84B580F6CB22DDD5C0838228699E0" Source="$(var.SourceDir)\Extra\rltiles\player\hand1\artefact\lehudibs_crystal_spear.png" KeyPath="yes" />
                   </Component>
                   <Component Id="owcF5333F645FC4FC18B51C6FE3EDB954B8" Guid="4002b798-c04c-9ce7-6798-a4090e42d98f">
                     <File Id="owfF5333F645FC4FC18B51C6FE3EDB954B8" Source="$(var.SourceDir)\Extra\rltiles\player\hand1\artefact\mace_of_variability.png" KeyPath="yes" />
                   </Component>
-                  <Component Id="owc124C89079D44DED4BB41E1863D06081E" Guid="97422dc8-7414-c6f1-317b-a9a50078aa06">
-                    <File Id="owf124C89079D44DED4BB41E1863D06081E" Source="$(var.SourceDir)\Extra\rltiles\player\hand1\artefact\majin.png" KeyPath="yes" />
+                  <Component Id="owc2A35ACCA0B06653936A1574D6248B656" Guid="faf84819-1544-cc7c-7c3d-a9eb43c3fa91">
+                    <File Id="owf2A35ACCA0B06653936A1574D6248B656" Source="$(var.SourceDir)\Extra\rltiles\player\hand1\artefact\majin-bo.png" KeyPath="yes" />
+                  </Component>
+                  <Component Id="owcAF9DAC958EED54D55CAD6042C60D95A9" Guid="3c523f6c-6b83-4402-da0c-85dba36de5cc">
+                    <File Id="owfAF9DAC958EED54D55CAD6042C60D95A9" Source="$(var.SourceDir)\Extra\rltiles\player\hand1\artefact\maxwells_thermic_engine.png" KeyPath="yes" />
                   </Component>
                   <Component Id="owc28F66041ECCD52C4EB6D2DC2879CF941" Guid="696ac8e0-cc93-30dc-5527-2ac7600ddb7f">
                     <File Id="owf28F66041ECCD52C4EB6D2DC2879CF941" Source="$(var.SourceDir)\Extra\rltiles\player\hand1\artefact\morg.png" KeyPath="yes" />
                   </Component>
+                  <Component Id="owc1FCF2A0D68977DAB7343541BE78676A1" Guid="25f72bae-7cb6-46b4-5f95-75da7aec24a5">
+                    <File Id="owf1FCF2A0D68977DAB7343541BE78676A1" Source="$(var.SourceDir)\Extra\rltiles\player\hand1\artefact\obsidian_axe.png" KeyPath="yes" />
+                  </Component>
                   <Component Id="owc35D03DB35D2D2DECE9B0BD169280C928" Guid="fed3b7bb-eaee-7a9c-2465-5a77b3aa7e4c">
                     <File Id="owf35D03DB35D2D2DECE9B0BD169280C928" Source="$(var.SourceDir)\Extra\rltiles\player\hand1\artefact\olgreb.png" KeyPath="yes" />
-                  </Component>
-                  <Component Id="owc71DEC0D24BE6E6532B311DF657F67B15" Guid="d67067ef-dce8-4d30-cbdc-3209cea43589">
-                    <File Id="owf71DEC0D24BE6E6532B311DF657F67B15" Source="$(var.SourceDir)\Extra\rltiles\player\hand1\artefact\order.png" KeyPath="yes" />
                   </Component>
                   <Component Id="owc7E96D138FA5812A313D81F019552CDF5" Guid="9d00b5c1-37fc-9e4b-4d51-dbb253ceb354">
                     <File Id="owf7E96D138FA5812A313D81F019552CDF5" Source="$(var.SourceDir)\Extra\rltiles\player\hand1\artefact\plutonium_sword.png" KeyPath="yes" />
@@ -16606,11 +16647,17 @@
                   <Component Id="owc16B521E268D914B3CFA7958513A82EA9" Guid="bbf1bbf2-fa87-b2f8-c83f-ea50da4796fa">
                     <File Id="owf16B521E268D914B3CFA7958513A82EA9" Source="$(var.SourceDir)\Extra\rltiles\player\hand1\artefact\rift.png" KeyPath="yes" />
                   </Component>
+                  <Component Id="owc9493C4EA0E5219F999CE31F619C76D31" Guid="f1373327-c7a4-b07a-c6e1-49bdd2d90e02">
+                    <File Id="owf9493C4EA0E5219F999CE31F619C76D31" Source="$(var.SourceDir)\Extra\rltiles\player\hand1\artefact\sceptre_of_asmodeus.png" KeyPath="yes" />
+                  </Component>
                   <Component Id="owc119982EFDDF648906514C036F262621E" Guid="31cb22f3-b3a2-f149-7acb-c42dd6664a5b">
                     <File Id="owf119982EFDDF648906514C036F262621E" Source="$(var.SourceDir)\Extra\rltiles\player\hand1\artefact\sceptre_of_torment.png" KeyPath="yes" />
                   </Component>
-                  <Component Id="owc8C7A6961659206044E89756D1AE81433" Guid="4746378f-5edf-13b9-c7d3-0e45c6089a8d">
-                    <File Id="owf8C7A6961659206044E89756D1AE81433" Source="$(var.SourceDir)\Extra\rltiles\player\hand1\artefact\shillelagh.png" KeyPath="yes" />
+                  <Component Id="owc5EDD140921F6F74C4ADA8BF4ED29CD7A" Guid="846f1332-fd36-d64e-3fd2-dc8b19fb05ec">
+                    <File Id="owf5EDD140921F6F74C4ADA8BF4ED29CD7A" Source="$(var.SourceDir)\Extra\rltiles\player\hand1\artefact\scimitar_of_flaming_death.png" KeyPath="yes" />
+                  </Component>
+                  <Component Id="owc5AB663A983DB073931332C462D0F54EF" Guid="37130061-5959-97a5-40b1-988e9c5b2018">
+                    <File Id="owf5AB663A983DB073931332C462D0F54EF" Source="$(var.SourceDir)\Extra\rltiles\player\hand1\artefact\scythe_of_curses.png" KeyPath="yes" />
                   </Component>
                   <Component Id="owc9D2E7016F1C65D4E28F96C37CE733D62" Guid="802d1ddc-eb18-2846-14f5-3fa855edc0e8">
                     <File Id="owf9D2E7016F1C65D4E28F96C37CE733D62" Source="$(var.SourceDir)\Extra\rltiles\player\hand1\artefact\singing_sword.png" KeyPath="yes" />
@@ -16621,6 +16668,9 @@
                   <Component Id="owc8964EA442653F101FF24ABD0C61BD3B9" Guid="e21229eb-fb69-66ca-25a4-6e02640c8a5c">
                     <File Id="owf8964EA442653F101FF24ABD0C61BD3B9" Source="$(var.SourceDir)\Extra\rltiles\player\hand1\artefact\sniper.png" KeyPath="yes" />
                   </Component>
+                  <Component Id="owc0764F5FF83113EC095836FAF78D12D55" Guid="3a6c5e70-ee44-e5dc-9a43-ea8b23589507">
+                    <File Id="owf0764F5FF83113EC095836FAF78D12D55" Source="$(var.SourceDir)\Extra\rltiles\player\hand1\artefact\spear_of_the_botono.png" KeyPath="yes" />
+                  </Component>
                   <Component Id="owc3DABACAB44F669A36353EBFF612F031C" Guid="5ab0472e-cd9e-ed0d-cdee-2cd9387e3798">
                     <File Id="owf3DABACAB44F669A36353EBFF612F031C" Source="$(var.SourceDir)\Extra\rltiles\player\hand1\artefact\spellbinder.png" KeyPath="yes" />
                   </Component>
@@ -16630,11 +16680,14 @@
                   <Component Id="owc3654575CBCC825B0414AF7E329B403F5" Guid="6667d511-0bd4-f0f5-6198-a32816b2545f">
                     <File Id="owf3654575CBCC825B0414AF7E329B403F5" Source="$(var.SourceDir)\Extra\rltiles\player\hand1\artefact\sword_of_power.png" KeyPath="yes" />
                   </Component>
-                  <Component Id="owcABCD915A65828130A3AAB34D0D8CEFCE" Guid="a0ad7467-8d10-4f94-241d-4d9bfe9ff95e">
-                    <File Id="owfABCD915A65828130A3AAB34D0D8CEFCE" Source="$(var.SourceDir)\Extra\rltiles\player\hand1\artefact\thermic_engine.png" KeyPath="yes" />
+                  <Component Id="owcE88FDD436FF9FB583050B7B960DE71B8" Guid="165e0f98-c3fd-1790-860e-8d4681c83ccb">
+                    <File Id="owfE88FDD436FF9FB583050B7B960DE71B8" Source="$(var.SourceDir)\Extra\rltiles\player\hand1\artefact\sword_of_the_doom_knight.png" KeyPath="yes" />
                   </Component>
-                  <Component Id="owcAC0B219E1AE367997662DF10FBBA757E" Guid="3dad02ed-ecaf-892f-4a9e-8e8ff5e09ba6">
-                    <File Id="owfAC0B219E1AE367997662DF10FBBA757E" Source="$(var.SourceDir)\Extra\rltiles\player\hand1\artefact\trident_octopus_king.png" KeyPath="yes" />
+                  <Component Id="owcF56DA26AAAD459DC1B19A60D40404E2A" Guid="b0e7dbb4-829b-38e2-3f66-ab7d2aeaa451">
+                    <File Id="owfF56DA26AAAD459DC1B19A60D40404E2A" Source="$(var.SourceDir)\Extra\rltiles\player\hand1\artefact\sword_of_zonguldrok.png" KeyPath="yes" />
+                  </Component>
+                  <Component Id="owc09F959530EF65D7D59A703E5430687ED" Guid="497f557b-bf8c-4e3b-4974-444998366298">
+                    <File Id="owf09F959530EF65D7D59A703E5430687ED" Source="$(var.SourceDir)\Extra\rltiles\player\hand1\artefact\trident_of_the_octopus_king.png" KeyPath="yes" />
                   </Component>
                   <Component Id="owc11C0BEEA901AEEF0CA3FF2C4150B0A65" Guid="af843e39-aad2-ec63-e732-0d4bbd15ecd1">
                     <File Id="owf11C0BEEA901AEEF0CA3FF2C4150B0A65" Source="$(var.SourceDir)\Extra\rltiles\player\hand1\artefact\undeadhunter.png" KeyPath="yes" />
@@ -16642,20 +16695,20 @@
                   <Component Id="owc5087232E206E7889EDF801E3EAB514DE" Guid="2be0209b-e121-9d85-e14c-a9feb850db98">
                     <File Id="owf5087232E206E7889EDF801E3EAB514DE" Source="$(var.SourceDir)\Extra\rltiles\player\hand1\artefact\vampires_tooth.png" KeyPath="yes" />
                   </Component>
+                  <Component Id="owcE946D93BF15531AAD1E0DA1E4DC7F03F" Guid="a998702d-e7aa-0947-4507-84d02c20f049">
+                    <File Id="owfE946D93BF15531AAD1E0DA1E4DC7F03F" Source="$(var.SourceDir)\Extra\rltiles\player\hand1\artefact\wrath_of_trog.png" KeyPath="yes" />
+                  </Component>
                   <Component Id="owcF5BA86BEC3646E8C72B5B7DD0AADBE2A" Guid="e0751b6f-8748-fa52-368d-21a78341d5c0">
                     <File Id="owfF5BA86BEC3646E8C72B5B7DD0AADBE2A" Source="$(var.SourceDir)\Extra\rltiles\player\hand1\artefact\wucad_mu.png" KeyPath="yes" />
                   </Component>
                   <Component Id="owc0EC1CF4AE3859328B28FA1EE7181774E" Guid="238f2b70-5bb4-d5ef-ce56-1b9f77f0326c">
                     <File Id="owf0EC1CF4AE3859328B28FA1EE7181774E" Source="$(var.SourceDir)\Extra\rltiles\player\hand1\artefact\wyrmbane.png" KeyPath="yes" />
                   </Component>
-                  <Component Id="owcD941F15DF6B0D42BB7E7B9A8EF67C677" Guid="3f395d17-5a68-609a-9dc7-f5d8fb575191">
-                    <File Id="owfD941F15DF6B0D42BB7E7B9A8EF67C677" Source="$(var.SourceDir)\Extra\rltiles\player\hand1\artefact\zealot_sword.png" KeyPath="yes" />
+                  <Component Id="owc1FFC95A1B947563B4A65907454278A9A" Guid="92b5ae75-c428-0d7d-d4fc-b1b0add1d0d1">
+                    <File Id="owf1FFC95A1B947563B4A65907454278A9A" Source="$(var.SourceDir)\Extra\rltiles\player\hand1\artefact\zealots_sword.png" KeyPath="yes" />
                   </Component>
                   <Component Id="owcADCF4EE59E2CC17C20D0853A6FE88A4B" Guid="83ad1b60-02d6-f2f4-dfe8-246daecd698e">
                     <File Id="owfADCF4EE59E2CC17C20D0853A6FE88A4B" Source="$(var.SourceDir)\Extra\rltiles\player\hand1\artefact\zephyr.png" KeyPath="yes" />
-                  </Component>
-                  <Component Id="owc81386E5CAB03465D00686770D93E9041" Guid="ef78e859-5066-c255-51d4-4d601bfeec08">
-                    <File Id="owf81386E5CAB03465D00686770D93E9041" Source="$(var.SourceDir)\Extra\rltiles\player\hand1\artefact\zonguldrok.png" KeyPath="yes" />
                   </Component>
                 </Directory>
                 <Directory Id="owd86FE8EE3D9494A597DD1C63C9C3F5693" Name="misc">
@@ -17484,8 +17537,8 @@
                 <Component Id="owc6292BFAE97B567EA9EEC68CD2FBC365F" Guid="68155b78-7793-6427-6814-baeb9fdf3888">
                   <File Id="owf6292BFAE97B567EA9EEC68CD2FBC365F" Source="$(var.SourceDir)\Extra\rltiles\player\transform\ice_form.png" KeyPath="yes" />
                 </Component>
-                <Component Id="owc7BCE9C4C6E8A4DCBDE73445C7D43D6AE" Guid="d4e7a5de-96b7-b0c1-21b1-4bdd6c9a359d">
-                  <File Id="owf7BCE9C4C6E8A4DCBDE73445C7D43D6AE" Source="$(var.SourceDir)\Extra\rltiles\player\transform\lich_form_centaur.png" KeyPath="yes" />
+                <Component Id="owcB4D65741DCECD82AFF57EA0C6E2904AE" Guid="c6979f0f-2036-0b5a-8bb2-71623a29967c">
+                  <File Id="owfB4D65741DCECD82AFF57EA0C6E2904AE" Source="$(var.SourceDir)\Extra\rltiles\player\transform\lich_form_centau.png" KeyPath="yes" />
                 </Component>
                 <Component Id="owc9F7E4D880ADFF7A0AADD4F44E788085F" Guid="718d29e1-1bc5-3dbc-3f70-4764deb179c2">
                   <File Id="owf9F7E4D880ADFF7A0AADD4F44E788085F" Source="$(var.SourceDir)\Extra\rltiles\player\transform\lich_form_felid.png" KeyPath="yes" />
@@ -17496,8 +17549,8 @@
                 <Component Id="owcD9A64D5F7301D43C56628C1D74DA67AA" Guid="06729483-58a5-1dd1-3e98-0bd35645295a">
                   <File Id="owfD9A64D5F7301D43C56628C1D74DA67AA" Source="$(var.SourceDir)\Extra\rltiles\player\transform\lich_form_naga.png" KeyPath="yes" />
                 </Component>
-                <Component Id="owc62A376952B419A54D1E77BFBB885003B" Guid="57ff2294-f211-ac79-132e-ce403b62fd45">
-                  <File Id="owf62A376952B419A54D1E77BFBB885003B" Source="$(var.SourceDir)\Extra\rltiles\player\transform\lich_form_octopode.png" KeyPath="yes" />
+                <Component Id="owc19BB04B1DA04EFC9E88A9D3C09B2B03B" Guid="ec28c489-0078-c8a2-dec6-46bf5d33c869">
+                  <File Id="owf19BB04B1DA04EFC9E88A9D3C09B2B03B" Source="$(var.SourceDir)\Extra\rltiles\player\transform\lich_form_octopo.png" KeyPath="yes" />
                 </Component>
                 <Component Id="owcA105845B598E24AEBD0F9386BF8BADE1" Guid="86789309-14f7-b1ab-edd4-3ea1053981af">
                   <File Id="owfA105845B598E24AEBD0F9386BF8BADE1" Source="$(var.SourceDir)\Extra\rltiles\player\transform\mushroom_form.png" KeyPath="yes" />
@@ -17511,8 +17564,8 @@
                 <Component Id="owc08DB0678F6E298419865E8F0AC91D34D" Guid="9fc90863-f355-c4b4-ad00-0be4c026c473">
                   <File Id="owf08DB0678F6E298419865E8F0AC91D34D" Source="$(var.SourceDir)\Extra\rltiles\player\transform\spider_form.png" KeyPath="yes" />
                 </Component>
-                <Component Id="owcC30D96EB2A15E4F418C4DEEB081C28DF" Guid="718673c7-bc57-dfae-c2d5-9634b23e94d5">
-                  <File Id="owfC30D96EB2A15E4F418C4DEEB081C28DF" Source="$(var.SourceDir)\Extra\rltiles\player\transform\statue_form_centaur.png" KeyPath="yes" />
+                <Component Id="owcE803A847F02256F3587BEB0B87DF4BF2" Guid="c83f79cc-cbdf-35b7-a532-77cd4f619de8">
+                  <File Id="owfE803A847F02256F3587BEB0B87DF4BF2" Source="$(var.SourceDir)\Extra\rltiles\player\transform\statue_form_centau.png" KeyPath="yes" />
                 </Component>
                 <Component Id="owc7502F065E3BFFDB8242595192F01A9CD" Guid="781f39f1-0c9a-d5f1-75a4-0b13d16c40e4">
                   <File Id="owf7502F065E3BFFDB8242595192F01A9CD" Source="$(var.SourceDir)\Extra\rltiles\player\transform\statue_form_felid.png" KeyPath="yes" />
@@ -17523,8 +17576,8 @@
                 <Component Id="owcF1AE02AB4C1A2F99F32E1F6913119FC7" Guid="337888f3-dcc2-3806-bb2e-9b930042e15f">
                   <File Id="owfF1AE02AB4C1A2F99F32E1F6913119FC7" Source="$(var.SourceDir)\Extra\rltiles\player\transform\statue_form_naga.png" KeyPath="yes" />
                 </Component>
-                <Component Id="owc2617194E9401E1B1025468DCE44E7763" Guid="4e414fa7-061b-7176-2f44-921abe9bf95f">
-                  <File Id="owf2617194E9401E1B1025468DCE44E7763" Source="$(var.SourceDir)\Extra\rltiles\player\transform\statue_form_octopode.png" KeyPath="yes" />
+                <Component Id="owc6A3C55610EF33A8CBE3DA6DE8ABD9161" Guid="3252f887-d00b-db6c-1e3b-f082739274ac">
+                  <File Id="owf6A3C55610EF33A8CBE3DA6DE8ABD9161" Source="$(var.SourceDir)\Extra\rltiles\player\transform\statue_form_octopo.png" KeyPath="yes" />
                 </Component>
                 <Component Id="owcCF725235B8458F90E337CDBAFB474571" Guid="a3fc4cb6-f69e-d6dd-373a-ebc809c070c3">
                   <File Id="owfCF725235B8458F90E337CDBAFB474571" Source="$(var.SourceDir)\Extra\rltiles\player\transform\tree_form.png" KeyPath="yes" />
@@ -18764,50 +18817,6 @@
                   <File Id="owf060DAE24D0A9B1C944BC6AB7E2C2CD8F" Source="$(var.SourceDir)\Extra\rltiles\UNUSED\worn\spriggan_defshield.png" KeyPath="yes" />
                 </Component>
               </Directory>
-            </Directory>
-          </Directory>
-        </Directory>
-        <Directory Id="owdB1F5DA8ABAC3BFA1AEA92C20263306A9" Name="its a folder">
-          <Directory Id="owdED8756F99E51B339C33ECF196F1A66D5" Name="another one">
-            <Directory Id="EXEFOLDER" Name="the real stuff">
-              <Component Id="owc433555B8857603E37C5E76BF8909C9FF" Guid="c8f7c4a7-c6ae-4bd4-3cf2-121ea510cd90">
-                <File Id="owf433555B8857603E37C5E76BF8909C9FF" Source="$(var.SourceDir)\bin\x86\Release\DisplayWindow.dll" KeyPath="yes" />
-              </Component>
-              <Component Id="owc5789501C66AF4153E05FD9C41EFEBD55" Guid="b4e224a0-e45a-5c39-4d1c-1d1fa950a92d">
-                <File Id="owf5789501C66AF4153E05FD9C41EFEBD55" Source="$(var.SourceDir)\bin\x86\Release\DisplayWindow.dll.config" KeyPath="yes" />
-              </Component>
-              <Component Id="owc9AED361758B159669EBC5CFEA4F7D213" Guid="aaf8a9f2-5836-4596-69f4-ade8bd3124b0">
-                <File Id="owf9AED361758B159669EBC5CFEA4F7D213" Source="$(var.SourceDir)\bin\x86\Release\FrameGenerator.dll" KeyPath="yes" />
-              </Component>
-              <Component Id="owcE02E562A749BE79DC13B69A21215E94C" Guid="bd44b032-5bae-9960-7a16-87c867f5dfdf">
-                <File Id="owfE02E562A749BE79DC13B69A21215E94C" Source="$(var.SourceDir)\bin\x86\Release\ICSharpCode.SharpZipLib.dll" KeyPath="yes" />
-              </Component>
-              <Component Id="owcFDADEB5759505CC40E600FAAF76D5E96" Guid="81b9b5f7-104a-400d-bae5-61a66a472e68">
-                <File Id="owfFDADEB5759505CC40E600FAAF76D5E96" Source="$(var.SourceDir)\bin\x86\Release\InputParser.dll" KeyPath="yes" />
-              </Component>
-              <Component Id="owc40FA0E22C87A441A7EC56B9B60E1D5F1" Guid="52bea063-dacb-16ed-a038-aa903ead6ca2">
-                <File Id="owf40FA0E22C87A441A7EC56B9B60E1D5F1" Source="$(var.SourceDir)\bin\x86\Release\PuttyDLL.dll" KeyPath="yes" />
-              </Component>
-              <Component Id="owcCC04B39067DA571A047213F8FB4C1EA2" Guid="71562fc8-38bf-4b47-1063-3484b1390198">
-                <File Id="owfCC04B39067DA571A047213F8FB4C1EA2" Source="$(var.SourceDir)\bin\x86\Release\PuttyDLL.exp" KeyPath="yes" />
-              </Component>
-              <Component Id="owcD06C0CE4819782629F0D3193E29D09BE" Guid="385a79c3-a154-8b83-2607-49f837bbc091">
-                <File Id="owfD06C0CE4819782629F0D3193E29D09BE" Source="$(var.SourceDir)\bin\x86\Release\PuttyDLL.lib" KeyPath="yes" />
-              </Component>
-              <Component Id="owc1B3C3037516B5BC81B826BDAD907CA83" Guid="c1ca176d-6af4-a9ac-4b3c-e7ac97a04b47">
-                <File Id="owf1B3C3037516B5BC81B826BDAD907CA83" Source="$(var.SourceDir)\bin\x86\Release\PuttySharp.dll" KeyPath="yes" />
-              </Component>
-              <Component Id="owc27653AD01BD9CCB1049113867B04CA2E" Guid="a1ed6c15-e0e3-f777-e0b5-b9da61a31d48">
-                <File Id="owf27653AD01BD9CCB1049113867B04CA2E" Source="$(var.SourceDir)\bin\x86\Release\System.Drawing.Common.dll" KeyPath="yes" />
-              </Component>
-              <Component Id="owc56A8FA7AADAC61048ADBEE6605638765" Guid="0df49782-28c8-93b5-1fe7-94dc8730703e">
-                <File Id="owf56A8FA7AADAC61048ADBEE6605638765" Source="$(var.SourceDir)\bin\x86\Release\TtyRecMonkey.exe" KeyPath="yes">
-                  <Shortcut Id="scB139AC5FC680862F7102BCCECF00D955" Name="DCSSReplay" Directory="DesktopFolder" WorkingDirectory="EXEFOLDER" Description="Play DCSS ttyrec files with visual generation." />
-                </File>
-              </Component>
-              <Component Id="owcA72DA8B1F0576D7417C1B0BA26EA0984" Guid="55b4e809-8a5b-4095-a02a-95cece143f95">
-                <File Id="owfA72DA8B1F0576D7417C1B0BA26EA0984" Source="$(var.SourceDir)\bin\x86\Release\TtyRecMonkey.exe.config" KeyPath="yes" />
-              </Component>
             </Directory>
           </Directory>
         </Directory>
