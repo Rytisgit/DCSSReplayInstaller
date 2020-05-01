@@ -3,10 +3,8 @@
   <Fragment>
     <Directory Id="TARGETDIR" Name="SourceDir">
       <Directory Id="ProgramFilesFolder">
-        <Directory Id="CompanyFolder" Name="TileBasedSolutions">
-          <Directory Id="INSTALLLOCATION" Name="DCSSReplay">
-            <Merge Id="DCSSReplayInstallerMM" SourceFile="$(var.DCSSReplayInstallerMM.TargetPath)" DiskId="1" Language="1033"/>
-          </Directory>
+        <Directory Id="INSTALLLOCATION" Name="DCSSReplay">
+          <Merge Id="DCSSReplayInstallerMM" SourceFile="$(var.DCSSReplayInstallerMM.TargetPath)" DiskId="1" Language="1033"/>
         </Directory>
       </Directory>
     </Directory>

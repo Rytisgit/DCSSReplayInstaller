@@ -17,12 +17,13 @@
 
 #### update DCSSReplayInstallerMM.wxs line 5
 
-` <?define SourceDir="C:\source\ttyrecPlayer\ttyrecTiles"?>
+` <?define SourceDir="C:\source\DCSSReplay"?>
 `
 
-#### to your DCSSReplay source folder
-
+#### to your DCSSReplay git source folder
 
 ### You also need to have built the main project with release configuration at least once
 
-### Finally Rebuild the DCSSReplayInstaller Solution as Release and the installer should appear in the bin folder.
+### If you Added/Removed any files from Extra folder, or created/deleted any projects you will need to update DCSSReplayInstallerMM.wxs by going to visual studio Tools/Launch IsWix Opening the DCSSReplayInstallerMM.wxs file in the configurator and updating the files in Files and Folders tab. 
+
+### Finally bump up the version and Rebuild the DCSSReplayInstaller Solution as Release and the installer should appear in the bin folder.
