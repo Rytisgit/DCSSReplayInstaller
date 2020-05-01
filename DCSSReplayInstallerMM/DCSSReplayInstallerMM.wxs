@@ -10,7 +10,7 @@
       <Directory Id="MergeRedirectFolder">
         <Directory Id="owd00BD073775AEE2E88B74CCEE86DD7715" Name="bin">
           <Directory Id="owd54A2E0B01ECF9DD808BEE4DCCBC53BF2" Name="x86">
-            <Directory Id="owd29D578A6F2C9F47BD6A398D676E67C46" Name="Release">
+            <Directory Id="EXEFOLDER" Name="Release">
               <Component Id="owc5AA13260C46134DC370CEAE4E3180160" Guid="87371ff4-a2c5-fdef-1694-4524d0c6a523">
                 <File Id="owf5AA13260C46134DC370CEAE4E3180160" Source="$(var.SourceDir)\bin\x86\Release\FrameGenerator.dll" KeyPath="yes" />
               </Component>
@@ -39,7 +39,9 @@
                 <File Id="owfC6D2EFF1C557EA0CD3B057F3F87406FB" Source="$(var.SourceDir)\bin\x86\Release\TtyRecDecoder.dll" KeyPath="yes" />
               </Component>
               <Component Id="owcDF72471137C9DC4299D4191F1284B913" Guid="a04e41f0-a6a2-e37a-f50f-0a6b0be04ea5">
-                <File Id="owfDF72471137C9DC4299D4191F1284B913" Source="$(var.SourceDir)\bin\x86\Release\TtyRecMonkey.exe" KeyPath="yes" />
+                <File Id="owfDF72471137C9DC4299D4191F1284B913" Source="$(var.SourceDir)\bin\x86\Release\TtyRecMonkey.exe" KeyPath="yes">
+                  <Shortcut Id="scB139AC5FC680862F7102BCCECF00D955" Name="DCSSReplay" Directory="DesktopFolder" WorkingDirectory="EXEFOLDER" Description="Play DCSS ttyrec files with visual tiles view." />
+                </File>
               </Component>
               <Component Id="owc1ED501F0A977043723EE0F20E222AD36" Guid="06984575-3ce7-029d-25b0-c85c056a13d6">
                 <File Id="owf1ED501F0A977043723EE0F20E222AD36" Source="$(var.SourceDir)\bin\x86\Release\TtyRecMonkey.exe.config" KeyPath="yes" />
