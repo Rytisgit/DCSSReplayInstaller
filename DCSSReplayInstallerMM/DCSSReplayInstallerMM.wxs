@@ -3,7 +3,7 @@
   <?define ComponentRules="OneToOne"?>
   <!-- SourceDir instructs IsWiX the location of the directory that contains files for this merge module -->
   <?define SourceDir="C:\source\DCSSReplay"?>
-  <Module Id="DCSSReplayInstallerMM" Language="1033" Version="0.7.0.0">
+  <Module Id="DCSSReplayInstallerMM" Language="1033" Version="1.0.0.0">
     <Package Id="732e35f2-67ae-4d0d-8bac-e6929a428783" Manufacturer="DCSSReplayInstallerMM" InstallerVersion="200" />
     <Directory Id="TARGETDIR" Name="SourceDir">
       <Directory Id="DesktopFolder" />
@@ -11,8 +11,14 @@
         <Directory Id="owd00BD073775AEE2E88B74CCEE86DD7715" Name="bin">
           <Directory Id="owd54A2E0B01ECF9DD808BEE4DCCBC53BF2" Name="x86">
             <Directory Id="EXEFOLDER" Name="Release">
+              <Component Id="owc3CF1162FE4B76A5C59B9E19564BC660F" Guid="f4d6a08e-75d6-653f-e982-7c847d580dfd">
+                <File Id="owf3CF1162FE4B76A5C59B9E19564BC660F" Source="$(var.SourceDir)\bin\x86\Release\data.cfg" KeyPath="yes" />
+              </Component>
               <Component Id="owc5AA13260C46134DC370CEAE4E3180160" Guid="87371ff4-a2c5-fdef-1694-4524d0c6a523">
                 <File Id="owf5AA13260C46134DC370CEAE4E3180160" Source="$(var.SourceDir)\bin\x86\Release\FrameGenerator.dll" KeyPath="yes" />
+              </Component>
+              <Component Id="owc8B7FE2A87D6C9EA7057599DF7ED754E0" Guid="9906792f-a3d0-82b8-d349-619d25810aa3">
+                <File Id="owf8B7FE2A87D6C9EA7057599DF7ED754E0" Source="$(var.SourceDir)\bin\x86\Release\HtmlAgilityPack.dll" KeyPath="yes" />
               </Component>
               <Component Id="owc1542354C0E9E08460773C84E6801A3D4" Guid="beb3ff07-5548-6001-9655-5b170dc837f5">
                 <File Id="owf1542354C0E9E08460773C84E6801A3D4" Source="$(var.SourceDir)\bin\x86\Release\ICSharpCode.SharpZipLib.dll" KeyPath="yes" />
@@ -20,20 +26,62 @@
               <Component Id="owc02418BA97E343B22C5919E11AE14D410" Guid="2b137bd6-31fc-29ca-9162-9c1a2c52a61b">
                 <File Id="owf02418BA97E343B22C5919E11AE14D410" Source="$(var.SourceDir)\bin\x86\Release\InputParser.dll" KeyPath="yes" />
               </Component>
-              <Component Id="owc0DDF8845703A432648CB382FFBBFA1F5" Guid="7be1a50a-24ff-65d6-8e16-1e0f5b920986">
-                <File Id="owf0DDF8845703A432648CB382FFBBFA1F5" Source="$(var.SourceDir)\bin\x86\Release\PuttyDLL.dll" KeyPath="yes" />
+              <Component Id="owcBF53656741AFE2F9D46F87C0CA41B63F" Guid="4fd66f71-df6b-5d8a-3dcb-abfefc2d7eda">
+                <File Id="owfBF53656741AFE2F9D46F87C0CA41B63F" Source="$(var.SourceDir)\bin\x86\Release\libPuttyDLL.dll" KeyPath="yes" />
               </Component>
-              <Component Id="owc1867913EA00FACD6A35190DD55AC006C" Guid="f1852960-3d0d-6757-b3fd-82fc767b086a">
-                <File Id="owf1867913EA00FACD6A35190DD55AC006C" Source="$(var.SourceDir)\bin\x86\Release\PuttyDLL.exp" KeyPath="yes" />
+              <Component Id="owcF58918B9C74041973D8E581F042CE5D0" Guid="929151db-bf83-1dde-0595-1c3a2b0ff61f">
+                <File Id="owfF58918B9C74041973D8E581F042CE5D0" Source="$(var.SourceDir)\bin\x86\Release\libPuttyDLL.lib" KeyPath="yes" />
               </Component>
-              <Component Id="owc5E181E4BBC85BACDA7871B61076BE03A" Guid="000392fc-c766-ab18-4d22-66d01b8b6b9b">
-                <File Id="owf5E181E4BBC85BACDA7871B61076BE03A" Source="$(var.SourceDir)\bin\x86\Release\PuttyDLL.lib" KeyPath="yes" />
+              <Component Id="owc5539D3DFDDA0474D6E9188A2DC7EC93F" Guid="711624e6-a00c-f587-e30e-5b5d8cd0eaad">
+                <File Id="owf5539D3DFDDA0474D6E9188A2DC7EC93F" Source="$(var.SourceDir)\bin\x86\Release\libSkiaSharp.dll" KeyPath="yes" />
+              </Component>
+              <Component Id="owcDA79CDA3A8E73C97B1C8BFECF62CA83C" Guid="d4f0309e-d22e-5e5c-7eb4-de4fee787f80">
+                <File Id="owfDA79CDA3A8E73C97B1C8BFECF62CA83C" Source="$(var.SourceDir)\bin\x86\Release\libSkiaSharp.dylib" KeyPath="yes" />
+              </Component>
+              <Component Id="owcB19A9A698959497D003E980A0677D7B4" Guid="c007927a-8cb0-fd03-1e96-88602f785995">
+                <File Id="owfB19A9A698959497D003E980A0677D7B4" Source="$(var.SourceDir)\bin\x86\Release\OpenTK.dll" KeyPath="yes" />
+              </Component>
+              <Component Id="owcFA37ADE55CE9E6C36FFEBEB73DC47023" Guid="50992682-55af-28a8-1a9e-36abc5551d57">
+                <File Id="owfFA37ADE55CE9E6C36FFEBEB73DC47023" Source="$(var.SourceDir)\bin\x86\Release\OpenTK.GLControl.dll" KeyPath="yes" />
               </Component>
               <Component Id="owcD3FB4B3702AE68BA8984FC324EE6513E" Guid="466d3a15-88a0-ecc4-90c5-d2d6733a3b66">
                 <File Id="owfD3FB4B3702AE68BA8984FC324EE6513E" Source="$(var.SourceDir)\bin\x86\Release\PuttySharp.dll" KeyPath="yes" />
               </Component>
+              <Component Id="owc75C101EAF87610FD869CB62CE9F4AAD3" Guid="9da0ee21-9c8b-eb15-55f3-52d2c2c872ea">
+                <File Id="owf75C101EAF87610FD869CB62CE9F4AAD3" Source="$(var.SourceDir)\bin\x86\Release\SkiaSharp.dll" KeyPath="yes" />
+              </Component>
+              <Component Id="owcEFD5F929666B087D774FA685B6DD8C12" Guid="27b3658c-e22c-728c-2cf5-17fefff310aa">
+                <File Id="owfEFD5F929666B087D774FA685B6DD8C12" Source="$(var.SourceDir)\bin\x86\Release\SkiaSharp.Views.Desktop.Common.dll" KeyPath="yes" />
+              </Component>
+              <Component Id="owc74AE2514F589F7BECDC22FD6F004C84F" Guid="72d7127f-8644-62e7-2a7f-8dc2640c30e9">
+                <File Id="owf74AE2514F589F7BECDC22FD6F004C84F" Source="$(var.SourceDir)\bin\x86\Release\SkiaSharp.Views.Desktop.dll" KeyPath="yes" />
+              </Component>
+              <Component Id="owcA715A02B935E3E8F72625E546B39A19D" Guid="5d4440f0-018a-7ff1-2b24-1519d9b8ee38">
+                <File Id="owfA715A02B935E3E8F72625E546B39A19D" Source="$(var.SourceDir)\bin\x86\Release\SkiaSharp.Views.Forms.dll" KeyPath="yes" />
+              </Component>
+              <Component Id="owcF6C099B8EE9D42D343BC2BBDED28E6E9" Guid="5f272066-3922-f849-5ed5-54cb76a513bc">
+                <File Id="owfF6C099B8EE9D42D343BC2BBDED28E6E9" Source="$(var.SourceDir)\bin\x86\Release\SkiaSharp.Views.Gtk.dll" KeyPath="yes" />
+              </Component>
+              <Component Id="owcC3CC843AF7876A2C0A9770FA4FD5F88E" Guid="f14c7091-a70e-66be-aefd-ad5659edbb90">
+                <File Id="owfC3CC843AF7876A2C0A9770FA4FD5F88E" Source="$(var.SourceDir)\bin\x86\Release\SkiaSharp.Views.WindowsForms.dll" KeyPath="yes" />
+              </Component>
+              <Component Id="owc172803154D6360F6FE1C57A473AE0442" Guid="a2c8ed50-35c5-b54c-695a-853323d89f3f">
+                <File Id="owf172803154D6360F6FE1C57A473AE0442" Source="$(var.SourceDir)\bin\x86\Release\SkiaSharp.Views.WPF.dll" KeyPath="yes" />
+              </Component>
+              <Component Id="owc1BFB4D6965A6F7CEC24336D2985DAB4A" Guid="dfa8f5b6-16b2-506e-fc4f-92ead61ba8a2">
+                <File Id="owf1BFB4D6965A6F7CEC24336D2985DAB4A" Source="$(var.SourceDir)\bin\x86\Release\System.Buffers.dll" KeyPath="yes" />
+              </Component>
               <Component Id="owcF2B883FDEB391FD094190F917E094875" Guid="625d9b19-1052-c562-5559-e200e8d8a0d7">
                 <File Id="owfF2B883FDEB391FD094190F917E094875" Source="$(var.SourceDir)\bin\x86\Release\System.Drawing.Common.dll" KeyPath="yes" />
+              </Component>
+              <Component Id="owc5D7517A1F480141CBD08948A75F55520" Guid="f6e2b41d-f6d0-76c3-6d92-7da2b5baab4f">
+                <File Id="owf5D7517A1F480141CBD08948A75F55520" Source="$(var.SourceDir)\bin\x86\Release\System.Memory.dll" KeyPath="yes" />
+              </Component>
+              <Component Id="owc7624582E9A2DCDF8714A3A37C1B1D19B" Guid="83aed19f-6859-1c47-78ff-a351268bb64e">
+                <File Id="owf7624582E9A2DCDF8714A3A37C1B1D19B" Source="$(var.SourceDir)\bin\x86\Release\System.Numerics.Vectors.dll" KeyPath="yes" />
+              </Component>
+              <Component Id="owc82C4CFF66B5D0B674598D9A374EBEA92" Guid="ad30d509-9ea7-6d51-62c5-a4d6db025e5c">
+                <File Id="owf82C4CFF66B5D0B674598D9A374EBEA92" Source="$(var.SourceDir)\bin\x86\Release\System.Runtime.CompilerServices.Unsafe.dll" KeyPath="yes" />
               </Component>
               <Component Id="owcC6D2EFF1C557EA0CD3B057F3F87406FB" Guid="f0257f35-90b6-2a42-1230-595cd968643e">
                 <File Id="owfC6D2EFF1C557EA0CD3B057F3F87406FB" Source="$(var.SourceDir)\bin\x86\Release\TtyRecDecoder.dll" KeyPath="yes" />
@@ -46,10 +94,25 @@
               <Component Id="owc1ED501F0A977043723EE0F20E222AD36" Guid="06984575-3ce7-029d-25b0-c85c056a13d6">
                 <File Id="owf1ED501F0A977043723EE0F20E222AD36" Source="$(var.SourceDir)\bin\x86\Release\TtyRecMonkey.exe.config" KeyPath="yes" />
               </Component>
+              <Component Id="owcA7C41DBCA0F29F6C7B73362D04C3BF08" Guid="dfd2b5ed-d400-3d33-72ad-287780868d1c">
+                <File Id="owfA7C41DBCA0F29F6C7B73362D04C3BF08" Source="$(var.SourceDir)\bin\x86\Release\Xamarin.Forms.Core.dll" KeyPath="yes" />
+              </Component>
+              <Component Id="owcA8C2BCAED48D18802D729A61FD8D594F" Guid="f8f2c808-6d22-1457-5aa6-7f6cc7618b5e">
+                <File Id="owfA8C2BCAED48D18802D729A61FD8D594F" Source="$(var.SourceDir)\bin\x86\Release\Xamarin.Forms.Platform.dll" KeyPath="yes" />
+              </Component>
+              <Component Id="owc2FC79067CC3127C29DA97BD769367B41" Guid="606a8b9a-1cf1-35ed-a60b-74236ad2ca1c">
+                <File Id="owf2FC79067CC3127C29DA97BD769367B41" Source="$(var.SourceDir)\bin\x86\Release\Xamarin.Forms.Platform.WPF.dll" KeyPath="yes" />
+              </Component>
+              <Component Id="owc8D0B1DF63CAC11E5B49115653F4EE480" Guid="3c7b12b7-6145-2b80-994a-b4ae6778dbd2">
+                <File Id="owf8D0B1DF63CAC11E5B49115653F4EE480" Source="$(var.SourceDir)\bin\x86\Release\Xamarin.Forms.Xaml.dll" KeyPath="yes" />
+              </Component>
             </Directory>
           </Directory>
         </Directory>
         <Directory Id="owd21099468CAA81499D3FD2DA6F3D07DF8" Name="Extra">
+          <Component Id="owc8B971208F54D6930117F0434FF5448CB" Guid="0effa81a-8f06-87fc-5710-3f7682f49ddc">
+            <File Id="owf8B971208F54D6930117F0434FF5448CB" Source="$(var.SourceDir)\Extra\cloud rules.txt" KeyPath="yes" />
+          </Component>
           <Component Id="owc8DD4EACBBE3DCD5AD85B8D6E49C537B2" Guid="e28d0905-926e-894d-2f86-3640bb7382bb">
             <File Id="owf8DD4EACBBE3DCD5AD85B8D6E49C537B2" Source="$(var.SourceDir)\Extra\clouds.txt" KeyPath="yes" />
           </Component>
@@ -71,17 +134,32 @@
           <Component Id="owcFDBD65750C78D35E53DF4D8DDA05329D" Guid="62430f4c-8f66-da09-eed5-b1d19ed5edde">
             <File Id="owfFDBD65750C78D35E53DF4D8DDA05329D" Source="$(var.SourceDir)\Extra\neg_tloc_hybrid.png" KeyPath="yes" />
           </Component>
+          <Component Id="owc45C06B1B4BE8736EAD0CB31E3F9DD314" Guid="c132fc66-d12b-a4cb-738d-e7c2ccbb97b3">
+            <File Id="owf45C06B1B4BE8736EAD0CB31E3F9DD314" Source="$(var.SourceDir)\Extra\pause.png" KeyPath="yes" />
+          </Component>
+          <Component Id="owcF9029F0D5E9A4E6B77D7271AD1D537B4" Guid="0091ecd2-5230-c3f2-9b27-e2f84f91b8b0">
+            <File Id="owfF9029F0D5E9A4E6B77D7271AD1D537B4" Source="$(var.SourceDir)\Extra\play.png" KeyPath="yes" />
+          </Component>
           <Component Id="owcD32614DC8665A5BFAD2D73AC67A8B2C6" Guid="e0a02681-6dcc-d443-7f8e-0a2584c61620">
             <File Id="owfD32614DC8665A5BFAD2D73AC67A8B2C6" Source="$(var.SourceDir)\Extra\racepng.txt" KeyPath="yes" />
           </Component>
+          <Component Id="owc9CE6CAA8F952D2940AFC6B724CE50D3D" Guid="f58ab9e3-e56c-8ec3-d313-43cf3654b6d0">
+            <File Id="owf9CE6CAA8F952D2940AFC6B724CE50D3D" Source="$(var.SourceDir)\Extra\SameMonsterRules.txt" KeyPath="yes" />
+          </Component>
           <Component Id="owcA0BFDCB927F2ACEF5CA36B8792AB1DE4" Guid="593146b9-6e5e-11dd-f9e3-28e9748420c1">
             <File Id="owfA0BFDCB927F2ACEF5CA36B8792AB1DE4" Source="$(var.SourceDir)\Extra\tilefloor.txt" KeyPath="yes" />
+          </Component>
+          <Component Id="owc75C49BE504BB9D1832C63F3E0F207485" Guid="8d8ce3e6-41a8-5a83-2fb4-ce90915a2726">
+            <File Id="owf75C49BE504BB9D1832C63F3E0F207485" Source="$(var.SourceDir)\Extra\tilefloorColors.txt" KeyPath="yes" />
           </Component>
           <Component Id="owcFF69F121CD66190414BE8BBB0A43CEAB" Guid="899aaace-a98a-95ef-874a-ab9f34eb8cd1">
             <File Id="owfFF69F121CD66190414BE8BBB0A43CEAB" Source="$(var.SourceDir)\Extra\unknown_altar.png" KeyPath="yes" />
           </Component>
           <Component Id="owc1DBEBF985108006AFFC8FB2D760EE542" Guid="72b059b9-f71e-3e28-ca1d-823a893522ed">
             <File Id="owf1DBEBF985108006AFFC8FB2D760EE542" Source="$(var.SourceDir)\Extra\unknown_potion.png" KeyPath="yes" />
+          </Component>
+          <Component Id="owc9009A083583AD3C015FF1318F14EA9D7" Guid="6b3356b5-f5f0-e395-fbb5-6c0db02f4bfa">
+            <File Id="owf9009A083583AD3C015FF1318F14EA9D7" Source="$(var.SourceDir)\Extra\unseen_item.png" KeyPath="yes" />
           </Component>
           <Component Id="owc4D8F74F0B3850B5C4093B141B2686252" Guid="6015643a-68b6-b811-3250-86f2f33e9bf0">
             <File Id="owf4D8F74F0B3850B5C4093B141B2686252" Source="$(var.SourceDir)\Extra\weapons.txt" KeyPath="yes" />
@@ -16087,9 +16165,6 @@
                 <Component Id="owcA92C85B406D563E9CED47E0884538609" Guid="87b4a900-7f64-24b8-14fa-5dd616c2492f">
                   <File Id="owfA92C85B406D563E9CED47E0884538609" Source="$(var.SourceDir)\Extra\rltiles\player\hand1\d_glaive.png" KeyPath="yes" />
                 </Component>
-                <Component Id="owc551F051C3CED11E88F215D211C6DCFA7" Guid="84762ce6-be87-8efa-3ff4-ae447a80f087">
-                  <File Id="owf551F051C3CED11E88F215D211C6DCFA7" Source="$(var.SourceDir)\Extra\rltiles\player\hand1\dagger.png" KeyPath="yes" />
-                </Component>
                 <Component Id="owc1A4488F6EFAE48C9808B66059A2EC8EE" Guid="c68b2ea8-5715-338d-c8fa-a0ae7d6db155">
                   <File Id="owf1A4488F6EFAE48C9808B66059A2EC8EE" Source="$(var.SourceDir)\Extra\rltiles\player\hand1\dagger_hand.png" KeyPath="yes" />
                 </Component>
@@ -16521,9 +16596,6 @@
                 </Component>
                 <Component Id="owcBB5C212CEC9DA338614168422F8CFA0D" Guid="e312e23f-bc82-63f9-5145-7555dfe15234">
                   <File Id="owfBB5C212CEC9DA338614168422F8CFA0D" Source="$(var.SourceDir)\Extra\rltiles\player\hand1\trident_two.png" KeyPath="yes" />
-                </Component>
-                <Component Id="owc0F1FC55082BAB87FFF4A181C7F88FFCC" Guid="9516f80e-d592-9aa7-1e20-ddccaa96f0ba">
-                  <File Id="owf0F1FC55082BAB87FFF4A181C7F88FFCC" Source="$(var.SourceDir)\Extra\rltiles\player\hand1\trident_two2.png" KeyPath="yes" />
                 </Component>
                 <Component Id="owc06E8234AEDCD06577EC5C3E95C2A1325" Guid="5b228d24-7503-c885-7a3b-3823879e7108">
                   <File Id="owf06E8234AEDCD06577EC5C3E95C2A1325" Source="$(var.SourceDir)\Extra\rltiles\player\hand1\triple_crossbow.png" KeyPath="yes" />
@@ -16995,9 +17067,6 @@
                   </Component>
                   <Component Id="owc07454620E5279E14852663E2859106EE" Guid="f8a7a590-c761-3b77-9148-eac44ad046e8">
                     <File Id="owf07454620E5279E14852663E2859106EE" Source="$(var.SourceDir)\Extra\rltiles\player\hand2\misc\book_yellow_dim.png" KeyPath="yes" />
-                  </Component>
-                  <Component Id="owc51D839EDF8862A1AB2D5B3622E7B6FF8" Guid="7f70a0b5-a41b-cef0-6c2f-20b5abda1d82">
-                    <File Id="owf51D839EDF8862A1AB2D5B3622E7B6FF8" Source="$(var.SourceDir)\Extra\rltiles\player\hand2\misc\dagger.png" KeyPath="yes" />
                   </Component>
                   <Component Id="owcD1DC2BD525C324DC77E23F16A4A61CBE" Guid="1c90d177-3a43-0669-365e-dd5007e84090">
                     <File Id="owfD1DC2BD525C324DC77E23F16A4A61CBE" Source="$(var.SourceDir)\Extra\rltiles\player\hand2\misc\dagger2.png" KeyPath="yes" />
