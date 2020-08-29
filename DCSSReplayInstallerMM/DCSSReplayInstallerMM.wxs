@@ -11,9 +11,6 @@
         <Directory Id="owd00BD073775AEE2E88B74CCEE86DD7715" Name="bin">
           <Directory Id="owd54A2E0B01ECF9DD808BEE4DCCBC53BF2" Name="x86">
             <Directory Id="EXEFOLDER" Name="Release">
-              <Component Id="owc3CF1162FE4B76A5C59B9E19564BC660F" Guid="f4d6a08e-75d6-653f-e982-7c847d580dfd">
-                <File Id="owf3CF1162FE4B76A5C59B9E19564BC660F" Source="$(var.SourceDir)\bin\x86\Release\data.cfg" KeyPath="yes" />
-              </Component>
               <Component Id="owc5AA13260C46134DC370CEAE4E3180160" Guid="87371ff4-a2c5-fdef-1694-4524d0c6a523">
                 <File Id="owf5AA13260C46134DC370CEAE4E3180160" Source="$(var.SourceDir)\bin\x86\Release\FrameGenerator.dll" KeyPath="yes" />
               </Component>
